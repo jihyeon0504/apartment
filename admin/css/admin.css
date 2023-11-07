@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100; 300; 400; 500; 700; 900&display=swap');@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');@import url('https://webfontworld.github.io/sunn/SUIT.css');
+*:focus { outline: none } 
+* { line-height: 1.428571429; font-family:'SUIT', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing: border-box; border: 0 } 
+body { margin: 0; min-width: 1600px; max-width: 100%; background: #f7f7f7 } 
+body.act { position: fixed; top: 0; bottom: 0; right: 0; left: 0 } 
+ul,ol { margin: 0; padding: 0; list-style: none } 
+dd { margin: 0 } 
+a { color: #3b414d; text-decoration: none } 
+input { border-radius: 0 } 
+input:focus { outline: none } 
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 1000px white inset } 
+fieldset { margin: 0; padding: 0; border: 0 } 
+button { padding: 0; border: 0; background: none; cursor: pointer } 
+p { margin: 0 } 
+em { font-style: normal } 
+hr { display: none } 
+input[type="text"]::placeholder { color: #aaa } 
+input[type="password"]::placeholder { color: #aaa } 
+textarea::placeholder { color: #aaa } 
+input::-webkit-input-placeholder { color: #aaa } 
+textarea::-webkit-input-placeholder { color: #aaa } 
+textarea:-ms-input-placeholder { color: #aaa } 
+input:-ms-input-placeholder { color: #aaa } 
+input:disabled::-webkit-input-placeholder { color: #ccc } 
+input:disabled:-moz-placeholder { color: #ccc } 
+input:disabled::-moz-placeholder { color: #ccc } 
+input:disabled:-ms-input-placeholder { color: #ccc } 
+.skip { display: none; } 
+
+/* 로그인 */
+#login .header { position: fixed; top: 0; right: 0; left: 0; border-bottom: 1px solid #ccc; background: #fff } 
+#login .header h1 { margin: 0 auto; padding: 20px 0 20px 0px; max-width: 1400px; } 
+#login .header h1 span { font-size: 18px; letter-spacing: -.8px; color: #474C81 } 
+#login .header h1 strong { font-size: 18px; letter-spacing: -.8px; color: #333333 } 
+#login .footer { position: fixed; bottom: 0; right: 0; left: 0 } 
+#login .footer .cite { display: block; margin: 0 auto; padding: 40px 0; max-width: 1400px; font-size: 12px; font-family: arial, sans-serif; font-style: normal; text-align: right } 
+#login .footer .cite strong { font-family: arial, sans-serif; color: #323232 } 
+#login .login { display: flex; align-items: center; justify-content: center; min-height: 100vh } 
+#login .login fieldset { position: relative; padding: 40px 50px 60px 50px; width: 530px; background: #fff; border-radius: 2px; box-shadow: 20px 40px 40px rgb(0 0 0 / 20%) } 
+#login .login h2 { padding: 160px 0 20px 0; line-height: 1; font-size: 20px; letter-spacing: -1.6px; text-align: center; color: #555; font-weight: normal; background: url("../img/apartment.svg") no-repeat 50% 0 / 170px auto } 
+#login .login h2 strong { padding: 0 5px; color: #000 } 
+#login .login dt { display: none; font-size: 12px; font-weight: 700; color: #555555 } 
+#login .login dd { position: relative; margin: 0 0 10px 0 } 
+#login .login dd i { position: absolute; top: 0; left: 0; display: block; width: 56px; height: 56px } 
+#login .login .login-id { background: url("../img/login-id.svg") no-repeat 16px 50% / 24px auto !important } 
+#login .login .login-pw { background: url("../img/login-pw.svg") no-repeat 16px 50% / 24px auto !important } 
+#login .login input[type="text"],
+#login .login input[type="password"] { padding: 0 16px 0 48px; width: 100%; height: 56px; font-size: 16px; letter-spacing: 0px; border: 1px solid #dfdfdf; transition: border .3s } 
+#login .login input:focus[type="text"],
+#login .login input:focus[type="password"] { border: 1px solid #323232 } 
+#login .login input[type="checkbox"]+label{display: flex;flex-direction: row;align-items: center;gap: 5px;}
+#login .login input[type="checkbox"]+label::before{content: '';display: block;width: 16px;height: 16px;border: 1px solid #ddd;background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%;}
+#login .login input[type="checkbox"]:checked+label::before{content: '';border: 1px solid #474C81;background: #474C81 url(../img/check2.svg) no-repeat 50% 50%;}
+#login .login input[type="checkbox"]+label span{font-size: 14px;letter-spacing: -0.75px;font-weight: 500;}
+#login .login button { position: relative; width: 100%; height: 60px; color: #fff; background: #323232; border-radius: 0px } 
+#login .login button:hover { background: #474C81 } 
+#login .login button span { position: relative; z-index: 2; font-size: 18px; color: #fff } 
+
+
+/* 헤더 */
+body.min #gnb { width: 100px } 
+body.min #gnb .gnb { overflow: hidden } 
+body.min #gnb .gnb-btn { left: 100px; transform: rotate(180deg) } 
+body.min #contain { padding: 50px 0 0 100px } 
+#header h1 a { display: flex; align-items: center; padding: 0 0 0 20px; height: 50px; font-size: 18px; letter-spacing: -1px; color: #000 } 
+#header h1 strong { padding: 0 4px 0 0 ;color: #474C81 } 
+#header h1 span { font-weight: 600; color: #474C81 } 
+#header .header { display: flex; align-items: center; justify-content: space-between; position: fixed; z-index: 2; top: 0; right: 0; left: 0; height: 50px; background: #fff; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%) } 
+#header .header .lnb { display: flex; align-items: center; padding: 0 20px } 
+#header .header .hello { display: flex; align-items: center; padding: 0 20px 0 0 } 
+#header .header .hello .name { font-size: 14px; font-weight: 400; vertical-align: middle } 
+#header .header .hello .name strong { color: #333333 } 
+#header .header .hello .name span { color: #909194 } 
+#header .header .hello .ico { margin-right: 6px; width: 30px; height: 30px; border-radius: 30px; overflow: hidden; vertical-align: middle; background: #eee } 
+#header .header .hello .ico a { position: relative; display: block; width: 30px; height: 30px } 
+#header .header .hello .ico img { width: 100%; height: auto } 
+#header .header .memb { display: flex; align-items: center; border-left: 1px solid #edeef0 } 
+#header .header .memb a { display: block; width: 50px; line-height: 50px; font-size: 18px; text-align: center; color: #909194 } 
+#header .header .login_info { position: absolute; right: 30px; top: 50%; transform: translateY(-50%) } 
+#header .header .login_info span { display: inline-block; font-size: 15px; margin-right: 40px; color: #fff; vertical-align: text-bottom } 
+#header .header .login_info b { color: #333 } 
+#header .header .login_info i { color: #777; font-size: 23px } 
+
+/* gnb */
+#gnb { position: fixed; z-index: 2; top: 50px; bottom: 0; left: 0;; width: 300px; background: #363740; box-shadow: 0 2px 4px 2px rgb(0 0 0 / 3%) } 
+#gnb:after { content: ''; position: absolute; z-index: 2; top: 0; bottom: 0; left: 0; width: 100px; background: #525460 } 
+#gnb .gnb { position: relative; z-index: 3 } 
+#gnb .gnb .depth1 .dp1 { transition: all .4s } 
+#gnb .gnb .depth1 .dp1:hover,
+#gnb .gnb .depth1 .dp1.act { background: #363740 } 
+#gnb .gnb .depth1 .dp1:hover .da1 span,
+#gnb .gnb .depth1 .dp1.act .da1 span { color: rgb(255 255 255 / 100%) } 
+#gnb .gnb .depth1 .dp1:hover .da1 i { color: rgb(255 255 255 / 100%) } 
+#gnb .gnb .depth1 .dp1.act .da1 i { color: rgb(255 255 255 / 100%) } 
+#gnb .gnb .depth1 .dp1.act .da1:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; display: block; width: 4px; background: #fff } 
+#gnb .gnb .depth1 .da1 { display: flex; flex-direction: column; justify-content: center; position: relative; width: 100px; height: 70px; text-align: center; border-bottom: 0px solid rgb(255 255 255 / 10%); cursor: pointer } 
+#gnb .gnb .depth1 .da1 i { display: block; font-size: 18px; color: rgb(255 255 255 / 30%) } 
+#gnb .gnb .depth1 .da1 i img { height: 18px } 
+#gnb .gnb .depth1 .dp1.act .da1 i img { filter: brightness(100) } 
+#gnb .gnb .depth1 .da1 span { display: block; padding-top: 4px; font-size: 12px; font-weight: 400; letter-spacing: -.6px; color: rgb(255 255 255 / 50%) } 
+#gnb .gnb .depth1 .da1 .new { width: 5px; height: 5px; background-color: #FF7171; border-radius: 50px; position: absolute; right: 20px; top: 10px } 
+#gnb .gnb .depth1 .dp1 em { display: none } 
+#gnb .gnb .depth2 { display: none; position: absolute; top: 0; left: 100px; padding: 0 20px; min-width: 210px } 
+#gnb .gnb .depth2 li { position: relative; border-bottom: 1px solid rgb(100 109 123 / 50%) } 
+#gnb .gnb .depth2 li a { display: block; line-height: 70px; font-size: 14px; font-weight: 600; letter-spacing: -.6px; color: #fff; text-decoration: none } 
+#gnb .gnb .depth2 li:hover a,
+#gnb .gnb .depth2 li.act a { color: #fff; font-weight: 700 } 
+#gnb .gnb-btn { display: block; position: absolute; top: 0px; left:300px; width: 20px; height: 70px; border: 1px solid #d6d7dc; background: #f9fafe url("../img/gnb-btn.svg") no-repeat 50% 50% ;cursor: pointer;} 
+
+
+/* main */
+#contain {padding: 50px 0 0 300px } 
+#contain .location { display: flex; align-items: center; justify-content: flex-end; flex-direction: row-reverse; position: relative; min-height: 69px; padding: 0 50px 0 30px;} 
+#contain .location .titles h2 { padding: 0 20px 0 0; font-size: 20px; font-weight: 600; letter-spacing: -1px; color: #313338 } 
+#contain .search {display: flex;flex-direction: column;align-items: flex-start;align-self: stretch;position: relative; margin: 0 30px; background: #fff; box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.08), 0px 2px 4px -2px rgba(24, 39, 75, 0.12); }
+#contain .search .title{padding: 10px;background: #333;width: 100%;}
+#contain .search .title .tit{font-size: 14px;color: #fff;font-weight: 700;letter-spacing: -0.75px;}
