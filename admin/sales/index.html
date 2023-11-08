@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>아파트 장비 판매 관리 시스템</title>
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -146,7 +147,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>결재상태 </th>
+                                <th>결제상태 </th>
                                 <td>
                                     <div class="inner">
                                         <select name="select" title="검색항목" class="sel">
@@ -225,7 +226,8 @@
                         <button type="button" class="bt bt-excell">엑셀다운</button>
                     </div>
                     <div class="button">
-                        <button type="button" class="bt bt-add" onclick="openModal('add101')">접수등록</button>
+                        <button type="button" class="bt bt-add"
+                            onclick="window.open('receive.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">접수등록</button>
                     </div>
                 </div>
             </div>
@@ -243,7 +245,7 @@
                                 <th>입주자구분</th>
                                 <th>고객명</th>
                                 <th>연락처</th>
-                                <th>결재상태</th>
+                                <th>결제상태</th>
                                 <th>입금액</th>
                                 <th>잔액</th>
                                 <th>진행상태</th>
@@ -252,7 +254,7 @@
                                 <th>메모</th>
                                 <th>계산서 여부</th>
                                 <th>발행</th>
-                                <th>결재</th>
+                                <th>결제</th>
                                 <th>설치</th>
                             </tr>
                         </thead>
@@ -274,8 +276,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -294,8 +300,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -314,8 +324,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -334,8 +348,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>5</td>
@@ -354,8 +372,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>6</td>
@@ -374,8 +396,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>7</td>
@@ -394,8 +420,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>8</td>
@@ -414,8 +444,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>9</td>
@@ -434,8 +468,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                             <tr>
                                 <td>10</td>
@@ -454,8 +492,12 @@
                                 <td>Y</td>
                                 <td>Y</td>
                                 <td><button class="bt bt-pbl">발행</button></td>
-                                <td><button class="bt bt-pay">결재</button></td>
-                                <td><button class="bt bt-ins">설치</button></td>
+                                <td><button class="bt bt-pay"
+                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
+                                </td>
+                                <td><button class="bt bt-ins"
+                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
