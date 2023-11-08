@@ -24,7 +24,7 @@
                 </span>
                 <span class="memb">
                     <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
-                    <a href="javascript:;" onclick="openModal('lout11')"><i class="fas fa-power-off"></i><span
+                    <a href="#"><i class="fas fa-power-off"></i><span
                             class="skip">로그아웃</span></a>
                 </span>
             </div>
@@ -275,7 +275,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -299,7 +299,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -323,7 +323,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -347,7 +347,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -371,7 +371,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -395,7 +395,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -419,7 +419,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -443,7 +443,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -467,7 +467,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -491,7 +491,7 @@
                                 <td>smlee</td>
                                 <td>Y</td>
                                 <td>Y</td>
-                                <td><button class="bt bt-pbl">발행</button></td>
+                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
                                 <td><button class="bt bt-pay"
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
@@ -529,6 +529,35 @@
     <footer id="footer">
         <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
     </footer>
+
+    <!-- 세금계산서발행 확인 모달 -->
+<section class="modal-boxed" id="vat">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 세금계산서 발행 처리하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt btn-yes">예</button>
+                <button type="button" class="bt btn-no" onclick="closeModal('vat')">아니오</button>
+            </div>
+        </footer>
+    </div>
+    </section>
+        <!-- 로그아웃 확인 모달 -->
+<section class="modal-boxed" id="logout">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 로그아웃 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt btn-yes">예</button>
+                <button type="button" class="bt btn-no" onclick="closeModal('logout')">아니오</button>
+            </div>
+        </footer>
+    </div>
+</section>
 </body>
 <script>
     $(function () {
