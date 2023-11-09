@@ -1,11 +1,5 @@
-@charset "utf-8";
-@import url('//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100; 300; 400; 500; 700; 900&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
-@import url('https://webfontworld.github.io/sunn/SUIT.css');
-*:focus { outline: none } 
-* { line-height: 1.428571429; font-family:'SUIT', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing: border-box; border: 0;margin: 0;padding: 0 } 
+@charset "utf-8";@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');@import url('https://webfontworld.github.io/sunn/SUIT.css');*:focus { outline: none } 
+* { line-height: 1.428571429; font-family:'SUIT', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing: border-box; border: 0; margin: 0; padding: 0 } 
 body { margin: 0; min-width: 1600px; max-width: 100%; background: #f7f7f7 } 
 body.act { position: fixed; top: 0; bottom: 0; right: 0; left: 0 } 
 ul,ol { margin: 0; padding: 0; list-style: none } 
@@ -46,10 +40,13 @@ input:disabled:-ms-input-placeholder { color: #ccc }
 .tar { text-align: right !important; } 
 .tal { text-align: left !important; } 
 
+.pointer { cursor: pointer !important; text-decoration: underline dotted #999; } 
+.pointer:hover { text-decoration: underline dotted #2B78E4; color: #2B78E4; } 
+
 /* 로그인 */
 #login .header { position: fixed; top: 0; right: 0; left: 0; border-bottom: 1px solid #ccc; background: #fff } 
 #login .header h1 { margin: 0 auto; padding: 20px 0 20px 0px; max-width: 1400px; } 
-#login .header h1 span { font-size: 18px; letter-spacing: -.8px; color: #474C81 } 
+#login .header h1 span { font-size: 18px; letter-spacing: -.8px; color: #225DAF } 
 #login .header h1 strong { font-size: 18px; letter-spacing: -.8px; color: #333333 } 
 #login .footer { position: fixed; bottom: 0; right: 0; left: 0 } 
 #login .footer .cite { display: block; margin: 0 auto; padding: 40px 0; max-width: 1400px; font-size: 12px; font-family: arial, sans-serif; font-style: normal; text-align: right } 
@@ -69,10 +66,10 @@ input:disabled:-ms-input-placeholder { color: #ccc }
 #login .login input:focus[type="password"] { border: 1px solid #323232 } 
 #login .login input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
 #login .login input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-#login .login input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+#login .login input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #2B78E4; background: #2B78E4 url(../img/check2.svg) no-repeat 50% 50%; } 
 #login .login input[type="checkbox"]+label span { font-size: 14px; letter-spacing: -0.75px; font-weight: 500; } 
-#login .login button { position: relative; width: 100%; height: 60px; color: #fff; background: #323232; border-radius: 0px } 
-#login .login button:hover { background: #474C81 } 
+#login .login button { position: relative; width: 100%; height: 60px; color: #fff; background-color: #2B78E4; border-radius: 0px } 
+#login .login button:hover { background-color: #225DAF; box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 10%) } 
 #login .login button span { position: relative; z-index: 2; font-size: 18px; color: #fff } 
 
 
@@ -82,8 +79,8 @@ body.min #gnb .gnb { overflow: hidden }
 body.min #gnb .gnb-btn { left: 100px; transform: rotate(180deg) } 
 body.min #contain { padding: 50px 0 0 100px } 
 #header h1 a { display: flex; align-items: center; padding: 0 0 0 20px; height: 50px; font-size: 18px; letter-spacing: -1px; color: #000 } 
-#header h1 strong { padding: 0 4px 0 0; color: #474C81 } 
-#header h1 span { font-weight: 600; color: #474C81 } 
+#header h1 strong { padding: 0 4px 0 0; color: #225DAF } 
+#header h1 span { font-weight: 600; color: #225DAF } 
 #header .header { display: flex; align-items: center; justify-content: space-between; position: fixed; z-index: 2; top: 0; right: 0; left: 0; height: 50px; background: #fff; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%) } 
 #header .header .lnb { display: flex; align-items: center; padding: 0 20px } 
 #header .header .hello { display: flex; align-items: center; padding: 0 20px 0 0 } 
@@ -141,6 +138,12 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .contain .titlewrap .title h4 { margin: 0; font-size: 16px; line-height: 1; letter-spacing: -0.75px; color:#363740; } 
 #contain .contain .titlewrap .title p { font-size: 15px; letter-spacing: -0.75px; color: #555; } 
 
+#contain .contain-wrap { display: flex; align-items: flex-start; align-self: stretch; } 
+#contain .contain-wrap .contain { margin-top: 0; } 
+#contain .contain-wrap .contain+.contain { margin-left: 0; } 
+#contain .contain-wrap .buttons { padding-bottom: 0; } 
+#contain .contain-wrap .buttons .button .bt-add { padding: 0 10px; min-width:65px; } 
+
 /* button */
 #contain .button-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 10px; } 
 #contain .buttons { display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding-bottom: 20px } 
@@ -150,7 +153,7 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .button .bt+.bt { margin-left: 10px } 
 #contain .search .bt-srh { padding: 0 60px; background-color: #525460; border-radius: 5px; color: #fff; font-size: 14px; transition: all 0.2s; } 
 #contain .search .bt-srh:hover { background-color: #333; } 
-#contain .button .bt-add { min-width: 102px; color: #fff; border: 1px solid #525460; background: #525460 } 
+#contain .button .bt-add { min-width: 100px; color: #fff; border: 1px solid #525460; background: #525460 } 
 #contain .button .bt-add:hover { border: 1px solid #333; background: #333 } 
 #contain .button .bt-del { min-width: 102px; font-size: 14px; color: #777; border: 1px solid #ccc; background: #fff } 
 #contain .button .bt-del:hover { color: #0C4721; border: 1px solid #0C4721 } 
@@ -188,6 +191,7 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .contain .tbl th { padding: 0 24px; font-size: 14px; font-weight: 600; border-bottom: 1px solid #ddd; background: #f5f5f5; color: #333; } 
 #contain .contain .tbl td { padding: 8px 16px; font-size: 14px; font-weight: 400; border-bottom: 1px solid #eee; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } 
 #contain .contain table.col { width: 100%; border-collapse: collapse; border-spacing: 0; white-space: nowrap; } 
+#contain .contain table.fixed { table-layout: fixed; } 
 #contain .contain table.col thead tr { height: 50px } 
 table.col thead th:first-child { border-left: 0 } 
 table.col thead th:last-child { border-right: 0 } 
@@ -211,8 +215,16 @@ table.col .bt-pbl { background-color: #2B78E4; color: #fff; font-weight: 600; }
 table.col .bt-pay { background-color: #FF7171; color: #fff; font-weight: 600; } 
 table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; } 
 
-
-
+#contain .contain-wrap .tbl.srll { margin-top: 10px; overflow-y: auto; } 
+#contain .contain-wrap .tbl table.col th { padding: 0 16px; } 
+#contain .contain-wrap .tbl table.col .sortwrap { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; } 
+#contain .contain-wrap .tbl table.col .sortwrap i { cursor: pointer; } 
+#contain .contain-wrap .tbl table.col .sortwrap i:hover { color: #2B78E4; } 
+#contain .contain-wrap .tbl table.col .blue { color: #2B78E4; } 
+#contain .contain-wrap .tbl table.col .pink { color: #FF7171; } 
+#contain .contain-wrap .select { display: flex; width: 100%; align-items: center; justify-content: flex-start; height: 100%; flex-direction: row; border: 1px solid #ddd; margin: 10px 0px; } 
+#contain .contain-wrap .select .tit { min-width: 150px; padding: 0 20px; display: flex; align-self: stretch; flex-direction: row; align-items: center; background: #F2F2F2; font-size: 15px; letter-spacing: -0.75px; font-weight: 600; color: #555; }  #contain .contain-wrap .select .slct { width: 100%; padding: 10px 10px; align-self: stretch; border-left: 1px solid #ddd; } 
+#contain .contain-wrap .select .slct .sel { width: 100%; padding: 10px; border: 1px solid #ddd; font-size: 14px; letter-spacing: -0.75px; } 
 /* pagenation */
 .paging { clear:both; text-align:center; margin-top:20px } 
 .paging .page { display:flex; justify-content:center; align-items:center } 
@@ -241,11 +253,11 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 
 
 
-.mwauto{min-width:auto !important}
-.mw600{min-width: 600px;width: auto;}
-.mw650{min-width: 650px;width: auto;}
-.mw700{min-width: 700px;width: auto;}
-.mw800{min-width: 800px;width: auto;}
+.mwauto { min-width:auto !important } 
+.mw600 { min-width: 600px !important } 
+.mw650 { min-width: 650px !important } 
+.mw700 { min-width: 700px !important } 
+.mw800 { min-width: 800px !important } 
 .minw260 { min-width: 260px; } 
 
 
@@ -261,11 +273,17 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 .w90p { width: 90% !important; } 
 .w100p { width: 100% !important; } 
 
-.w50 {width: 50px !important} 
-.w80 {width: 80px !important} 
-.w100 {width: 100px !important} 
-.w200 {width: 200px !important} 
-.w300 {width: 300px !important} 
-.w400 {width: 400px !important} 
-.w500 {width: 500px !important} 
-.w700 {width: 700px !important} 
+.w50 { width: 50px !important } 
+.w80 { width: 80px !important } 
+.w100 { width: 100px !important } 
+.w150 { width: 150px !important } 
+.w200 { width: 200px !important } 
+.w250 { width: 250px !important } 
+.w300 { width: 300px !important } 
+.w400 { width: 400px !important } 
+.w500 { width: 500px !important } 
+.w700 { width: 700px !important } 
+
+
+.h620 { height: 620px !important; } 
+.h546 {height: 546px !important;}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장비판매접수등록</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw600">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>아파트관리등록</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-add" onclick="openModal('register1')">아파트등록</button>
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="tit">
+                    <h3>등록정보</h3>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w30p">
+                                <col class="w70p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">아파트명</strong></th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="아파트명을 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal" rowspan="2"><strong class="bullet">주소</strong></th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="주소를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="상세주소를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">관리자명</strong></th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="관리자를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">전화번호</strong></th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="전화번호를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">메모</th>
+                                    <td>
+                                        <div class="textarea">
+                                            <textarea placeholder="메모를 입력해주세요."></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<!-- 등록 확인 모달 -->
+<section class="modal-boxed" id="register1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 등록 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('register1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('register1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 저장 확인 모달 -->
+<section class="modal-boxed" id="save1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 저장 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('save1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('save1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+
+</html>

@@ -40,7 +40,8 @@
                             <li><a href="../sales/index.html">장비판매관리</a></li>
                         </ul>
                     </div>
-                    <div class="dp1"> <a href="../afterService/index.html" class="da1"><i><img src="../img/dash-ico02.svg" alt="장애처리관리"></i>
+                    <div class="dp1"> <a href="../afterService/index.html" class="da1"><i><img
+                                    src="../img/dash-ico02.svg" alt="장애처리관리"></i>
                             <span>장애처리관리</span>
                             <div class="new"></div>
                         </a>
@@ -87,7 +88,7 @@
     <main id="contain">
         <section class="location">
             <div class="titles">
-                <h2>장비 판매 관리</h2>
+                <h2>장애 처리 관리</h2>
             </div>
         </section>
         <!-- 검색 -->
@@ -138,7 +139,7 @@
                                         <select name="select" title="검색항목" class="sel">
                                             <option>전체</option>
                                             <option>준비중</option>
-                                            <option>설치완료</option>
+                                            <option>처리완료</option>
                                             <option>홀딩</option>
                                             <option>접수취소</option>
                                         </select>
@@ -192,7 +193,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <th>설치일자</th>
+                                <th>처리일자</th>
                                 <td colspan="3">
                                     <div class="form minw260">
                                         <div class="input">
@@ -248,13 +249,13 @@
                                 <th>입금액</th>
                                 <th>잔액</th>
                                 <th>진행상태</th>
-                                <th>설치/취소일자</th>
+                                <th>처리일/취소일자</th>
                                 <th>설치자</th>
                                 <th>메모</th>
                                 <th>계산서 여부</th>
                                 <th>발행</th>
                                 <th>결제</th>
-                                <th>설치</th>
+                                <th>처리</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -264,13 +265,14 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td  class="pointer"
-                                onclick="window.open('receive.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">김철수</td>
+                                <td class="pointer"
+                                    onclick="window.open('receive.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
+                                    김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -280,21 +282,21 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>2022-08-06</td>
                                 <td>기타</td>
                                 <td>103-3132</td>
-                                <td>회장</td>
+                                <td class="pointer">회장</td>
                                 <td>김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -304,8 +306,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -313,12 +315,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -328,8 +330,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -337,12 +339,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -352,8 +354,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>5</td>
@@ -361,12 +363,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -376,8 +378,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>6</td>
@@ -385,12 +387,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -400,8 +402,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>7</td>
@@ -409,12 +411,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -424,8 +426,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>8</td>
@@ -433,12 +435,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -448,8 +450,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>9</td>
@@ -457,12 +459,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -472,8 +474,8 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
-                                </td>
+                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
+                            </td>
                             </tr>
                             <tr>
                                 <td>10</td>
@@ -481,12 +483,12 @@
                                 <td>기타</td>
                                 <td>103-3132</td>
                                 <td>회장</td>
-                                <td>김철수</td>
+                                <td class="pointer">김철수</td>
                                 <td>010-1234-5678</td>
                                 <td>완료</td>
-                                <td class="tar">715,000</td>
+                                <td class="tar">200,000</td>
                                 <td class="tar">0</td>
-                                <td>설치완료</td>
+                                <td>처리완료</td>
                                 <td>2022-08-09</td>
                                 <td>smlee</td>
                                 <td>Y</td>
@@ -496,7 +498,7 @@
                                         onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
                                 </td>
                                 <td><button class="bt bt-ins"
-                                        onclick="window.open('install.html', '접수등록','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">설치</button>
+                                        onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -529,41 +531,12 @@
     <footer id="footer">
         <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
     </footer>
-
-    <!-- 세금계산서발행 확인 모달 -->
-    <section class="modal-boxed" id="vat">
-        <div class="modal-alert w400">
-            <article class="article">
-                <div class="con"> 세금계산서 발행 처리하시겠습니까? </div>
-            </article>
-            <footer class="footer">
-                <div class="buttons">
-                    <button type="button" class="bt btn-yes">예</button>
-                    <button type="button" class="bt btn-no" onclick="closeModal('vat')">아니오</button>
-                </div>
-            </footer>
-        </div>
-    </section>
-    <!-- 로그아웃 확인 모달 -->
-    <section class="modal-boxed" id="logout">
-        <div class="modal-alert w400">
-            <article class="article">
-                <div class="con"> 로그아웃 하시겠습니까? </div>
-            </article>
-            <footer class="footer">
-                <div class="buttons">
-                    <button type="button" class="bt btn-yes">예</button>
-                    <button type="button" class="bt btn-no" onclick="closeModal('logout')">아니오</button>
-                </div>
-            </footer>
-        </div>
-    </section>
 </body>
 <script>
     $(function () {
-        $(".dp1:nth-child(1)").addClass('act');
-        $(".dp1:nth-child(1) .depth2").show();
-        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
     });
 </script>
 
