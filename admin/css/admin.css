@@ -242,7 +242,8 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl .row input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
 #contain .contain .table .tbl .row input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
 #contain .contain .table .tbl .row .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
-
+#contain .contain .table .tbl .row .ipt .ip-txt:focus { border: 1px solid #2a3044; } 
+#contain .contain .table .tbl .row .sel:focus { border: 1px solid #333; }
 
 
 /* pagenation */
