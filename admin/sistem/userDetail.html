@@ -1,0 +1,266 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>아파트 장비 판매 관리 시스템</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header-top -->
+        <section class="header">
+            <h1><a href="../sales/index.html"><strong>아파트장비 </strong>판매관리시스템</a></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="../img/apartment.svg" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="memb">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="#"><i class="fas fa-power-off"></i><span class="skip">로그아웃</span></a>
+                </span>
+            </div>
+        </section>
+        <!-- header-side -->
+        <aside id="gnb">
+            <div class="gnb-btn"></div>
+            <nav class="gnb">
+                <div class="depth1">
+                    <div class="dp1"> <a href="../sales/index.html" class="da1">
+                            <i><img src="../img/dash-ico01.svg" alt="장비판매관리"></i>
+                            <span>장비판매관리 </span></a>
+                        <ul class="depth2">
+                            <li><a href="../sales/index.html">장비판매관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../afterService/index.html" class="da1"><i><img
+                                    src="../img/dash-ico02.svg" alt="장애처리관리"></i>
+                            <span>장애처리관리</span>
+                            <div class="new"></div>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../afterService/index.html">장애처리관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../sistem/user.html" class="da1"><i><img src="../img/dash-ico03.svg"
+                                    alt="시스템관리"></i>
+                            <span>시스템관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../sistem/user.html">사용자관리</a></li>
+                            <li><a href="../sistem/index.html">코드관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../apartment/index.html" class="da1"><i><img src="../img/dash-ico04.svg"
+                                    alt="아파트관리"></i>
+                            <span>아파트관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../apartment/index.html">아파트관리</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </aside>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                $(".gnb .dp1").click(function () {
+                    var list = $(this).index();
+                    $(".gnb .dp1").removeClass("act");
+                    $(this).addClass("act");
+
+                    $(".depth2").hide();
+                    $(".depth2").eq(list).show();
+                });
+                $(".gnb-btn").click(function () {
+                    $("body").stop().toggleClass("min");
+                    return false;
+                });
+            });
+            //]]>
+        </script>
+    </header>
+    <!-- main -->
+    <main id="contain">
+        <section class="location">
+            <div class="titles">
+                <h2>사용자관리</h2>
+                <b>사용자등록</b>
+            </div>
+        </section>
+        <!-- 검색내역 -->
+        <section class="contain">
+            <div class="titlewrap">
+                <div class="title">
+                    <h3>사용자 기본정보</h3>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-add" onclick="openModal('register1')">사용자등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w35p">
+                            <col class="w15p">
+                            <col class="w35p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="tal"><strong class="bullet">아이디</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="아이디를 입력해주세요.">
+                                        </div>
+                                        <button class="bt bt-check" onclick="openModal('check1')">중복체크</button>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">이름</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="이름을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">비밀번호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="비밀번호를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th class="tal">비밀번호 확인</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="비밀번호를 한번 더 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">소속회사</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="소속회사" class="sel">
+                                            <option>선택</option>
+                                            <option>소속회사</option>
+                                            <option>소속회사</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">핸드폰번호</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="비밀번호를 한번 더 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">사용권한</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="사용권한" class="sel">
+                                            <option>선택</option>
+                                            <option>관리자</option>
+                                            <option>상황</option>
+                                            <option>설치기사</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <th class="tal">사용여부</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="사용여부" class="sel">
+                                            <option>선택</option>
+                                            <option>사용</option>
+                                            <option>미사용</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">추가사업장권한</th>
+                                <td colspan="3">
+                                    <div class="inn">
+                                        <div class="ipt">
+                                            <input type="checkbox" id="place1" name="check" class="skip">
+                                            <label for="place1"> <span>DRCTS</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="checkbox" id="place2" name="check" class="skip">
+                                            <label for="place2"> <span>삼성하나넷</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="checkbox" id="place3" name="check" class="skip">
+                                            <label for="place3"> <span>minhyun</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+        <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
+    </footer>
+</body>
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- 등록 확인 모달 -->
+<section class="modal-boxed" id="register1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 등록 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('register1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('register1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 중복 체크 확인 모달 -->
+<section class="modal-boxed" id="check1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 중복된 코드 입니다. </div>
+        </article>
+        <footer class="footer">
+            <div class="button">
+                <button type="button" class="bt bt-okay" onclick="closeModal('check1')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+
+
+</html>
