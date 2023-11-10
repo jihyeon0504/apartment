@@ -25,7 +25,6 @@ input:disabled:-moz-placeholder { color: #ccc }
 input:disabled::-moz-placeholder { color: #ccc } 
 input:disabled:-ms-input-placeholder { color: #ccc } 
 .skip { display: none; } 
-.ip-txt:focus { border: 1px solid #2a3044; } 
 
 .srll { padding:0 5px 0 0; overflow-y:scroll; box-sizing:border-box } 
 .srll::-webkit-scrollbar { width:5px } 
@@ -229,22 +228,20 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain-wrap .select .tit { min-width: 150px; padding: 0 20px; display: flex; align-self: stretch; flex-direction: row; align-items: center; background: #F2F2F2; font-size: 15px; letter-spacing: -0.75px; font-weight: 600; color: #555; } #contain .contain-wrap .select .slct { width: 100%; padding: 10px 10px; align-self: stretch; border-left: 1px solid #ddd; } 
 #contain .contain-wrap .select .slct .sel { width: 100%; padding: 10px; border: 1px solid #ddd; font-size: 14px; letter-spacing: -0.75px; } 
 
-#contain .contain .table .tbl .row th .bullet { display: flex; align-items: center; position: relative; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #333 } 
-#contain .contain .table .tbl .row th .bullet::before { content: ''; position: absolute; left: -8px; width: 4px; height: 4px; background: #2B78E4; border-radius: 50px; } 
-#contain .contain .table .tbl .row .form { display: flex; align-items: center; width: 100%; gap: 10px; } 
-#contain .contain .table .tbl .row .bt { height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px; } 
-#contain .contain .table .tbl .row .bt-check { width: 200px; background-color: #2B78E4; color: #fff; } 
-#contain .contain .table .tbl .row td .inner { display: flex; align-items: center; } 
-#contain .contain .table .tbl .row .sel { padding: 10px; min-width: 100px; width: 100%; font-size: 14px; border: 1px solid #ddd; background: #fff; } 
-#contain .contain .table .tbl .row select option { font-size: 14px; } 
-#contain .contain .table .tbl .row .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; flex-wrap: wrap; } 
-#contain .contain .table .tbl .row input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-#contain .contain .table .tbl .row input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-#contain .contain .table .tbl .row input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
-#contain .contain .table .tbl .row .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
-#contain .contain .table .tbl .row .ipt .ip-txt:focus { border: 1px solid #2a3044; } 
-#contain .contain .table .tbl .row .sel:focus { border: 1px solid #333; }
-
+#contain .contain .table .tbl th .bullet { display: flex; align-items: center; position: relative; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #333 } 
+#contain .contain .table .tbl th .bullet::before { content: ''; position: absolute; left: -8px; width: 4px; height: 4px; background: #2B78E4; border-radius: 50px; } 
+#contain .contain .table .tbl .form { display: flex; align-items: center; width: 100%; gap: 10px; } 
+#contain .contain .table .tbl .bt { height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px; } 
+#contain .contain .table .tbl .bt-check { width: 200px; background-color: #2B78E4; color: #fff; } 
+#contain .contain .table .tbl td .inner { display: flex; align-items: center; } 
+#contain .contain .table .tbl .sel { padding: 10px; min-width: 100px; width: 100%; font-size: 14px; border: 1px solid #ddd; background: #fff; } 
+#contain .contain .table .tbl .sel:focus { border: 1px solid #2a3044; } 
+#contain .contain .table .tbl select option { font-size: 14px; } 
+#contain .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; flex-wrap: wrap; } 
+#contain .contain .table .tbl input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
+#contain .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+#contain .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+#contain .contain .table .tbl .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
 
 /* pagenation */
 .paging { clear:both; text-align:center; margin-top:20px } 
@@ -273,6 +270,7 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 
 
 
+.ip-txt:focus { border: 1px solid #2a3044 !important; } 
 
 .mwauto { min-width:auto !important } 
 .mw600 { min-width: 600px !important } 
