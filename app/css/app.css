@@ -1,8 +1,8 @@
-@charset "utf-8"; 
+@charset "utf-8";
 /* 폰트 */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-@import url('https://webfontworld.github.io/gmarket/GmarketSans.css'); 
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 @import url('https://webfontworld.github.io/sunn/SUIT.css'); /* */
 
 * { margin: 0; padding: 0; } 
@@ -132,9 +132,9 @@ img.col { width:100%; height:auto }
 /* header */
 #header { position: sticky; z-index: 99; top: 0; background-color: #fff; transition: all 0.3s; } 
 #header .title { display: flex; align-items: center; justify-content: center; position: relative; height: 4rem; box-shadow: 0 0.2rem 0.5rem #00000010; } 
-#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 6rem; height: 4rem; background: url(../img/before.svg) no-repeat 50% 50%; } 
+#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 4rem; height: 4rem; background: url(../img/before.svg) no-repeat 50% 50%; } 
 #header .title .tit { font-size: 20px; letter-spacing: -0.5px; } 
-
+#header .title .logout { position: absolute; top: 0; right: 0; display: block; width: 4rem; height: 4rem; background: url(../img/logout.svg) no-repeat 50% 50%; } 
 
 /* login */
 #login .loginWrap { display: flex; flex-direction: column; justify-content: center; height: 100vh; } 
@@ -171,8 +171,8 @@ img.col { width:100%; height:auto }
 #main .mainWarp .button .register i { background:url(../img/reg.svg) no-repeat; } 
 #main .mainWarp .button p { font-size: 30px; font-family: SUITE; font-weight: 700; color: #fff; letter-spacing: -0.5px; } 
 #main .logout { width: 100%; display: flex; flex-direction: column; align-items: center; } 
-#main .logout .bt-logout { font-family: SUITE; font-size: 18px; letter-spacing: -0.5px; color: #555; font-weight: 600; text-decoration: underline; } 
-
+#main .logout .bt-logout { display: flex; flex-direction: row; align-items: center; font-family: SUITE; font-size: 18px; letter-spacing: -0.5px; color: #555; font-weight: 600; padding: 10px 40px; border: 1px solid #ddd; border-radius: 5px; background-color: #f5f5f5;} 
+#main .logout i.logout { background: url(../img/logout.svg) no-repeat 50% 50%; width: 60px; height: 60px; } 
 .contain { padding: 16px 10px; background-color: #fff; border: 1px solid #f2f2f2; width: 100%; display: block; margin: 20px auto 0; } 
 .contain:first-child { margin-top: 0; } 
 .contain:last-child { margin-bottom: 20px; } 
