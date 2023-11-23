@@ -51,7 +51,6 @@
                                                 <div class="form">
                                                     <div class="input">
                                                         <input type="date" class="ip-dat">
-                                                        <button class="bt-reset">초기화</button>
                                                     </div>
                                                 </div>
                                             </td>
@@ -76,7 +75,6 @@
                                                 <div class="form">
                                                     <div class="input">
                                                         <input type="date" class="ip-dat">
-                                                        <button class="bt-reset">초기화</button>
                                                     </div>
                                                 </div>
                                             </td>
@@ -195,90 +193,69 @@
                             <button class="bt-add" onclick="location.href='./cost.html'">추가</button>
                         </div>
                         <div class="table">
-                            <div class="tbl col ">
+                            <div class="tbl col">
                                 <table>
                                     <colgroup>
-                                        <col class="w40">
+                                        <col class="w10p">
                                         <col>
-                                        <col class="w40">
-                                        <col>
-                                        <col>
+                                        <col class="w10p">
+                                        <col class="w15p">
                                         <col>
                                     </colgroup>
                                     <thead>
                                         <th>번호</th>
                                         <th>항목</th>
                                         <th>수량</th>
-                                        <th>단가</th>
-                                        <th>기술료</th>
-                                        <th>금액</th>
+                                        <th colspan="2">금액</th>
                                     </thead>
                                     <tbody>
+                                        <!-- 부품및 기술료1 -->
                                         <tr onclick="location.href='./cost.html'" class="view">
-                                            <td class="tac">1</td>
-                                            <td class="tal">
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt" value="교체부품">
-                                                    </div>
-                                                </div>
+                                            <td class="tac non" rowspan="3">1</td>
+                                            <td class="tal category" rowspan="3">
+                                                교체부품
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tac" value="1">
-                                                    </div>
-                                                </div>
+                                            <td class="tac" rowspan="3">
+                                                1
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="100,000"></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="30,000"></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="130,000"></div>
-                                                </div>
+                                            <td class="tal">단가</td>
+                                            <td class="tar">
+                                                100,000
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td class="tal">기술료</td>
+                                            <td class="tar">
+                                                30,000
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>총금액</td>
+                                            <td class="tar" colspan="2">130,000</td>
+                                        </tr>
+                                        <!-- 부품및 기술료2 -->
                                         <tr onclick="location.href='./cost.html'" class="view">
-                                            <td class="tac">2</td>
-                                            <td class="tal">
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt" value="메인보드">
-                                                    </div>
-                                                </div>
+                                            <td class="tac non" rowspan="3">2</td>
+                                            <td class="tal category" rowspan="3">
+                                                메인보드교체메인보드교체메인보드교체
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tac" value="2">
-                                                    </div>
-                                                </div>
+                                            <td class="tac" rowspan="3">
+                                                2
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="200,000"></div>
-                                                </div>
+                                            <td class="tal">단가</td>
+                                            <td class="tar">
+                                                100,000
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="60,000"></div>
-                                                </div>
+                                        </tr>
+                                        <tr>
+                                            <td class="tal">기술료</td>
+                                            <td class="tar">
+                                                60,000
                                             </td>
-                                            <td>
-                                                <div class="form">
-                                                    <div class="ipt"><input type="text" class="ip-txt tar"
-                                                            value="260,000"></div>
-                                                </div>
-                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>총금액</td>
+                                            <td class="tar" colspan="2">260,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
