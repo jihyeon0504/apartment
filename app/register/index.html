@@ -9,6 +9,7 @@
     <link media="screen" rel="stylesheet" type="text/css" href="../css/app.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <div class="title">
                     <button class="prev" onclick="location.href='../main/'"><span class="skip">이전페이지</span></button>
                     <h2 class="tit">접수등록</h2>
-                    <button class="logout" onclick="location.href='../login/'"><span class="skip">로그아웃</span></button>
+                    <button class="logout" onclick="openModal('logout')"><span class="skip">로그아웃</span></button>
                 </div>
             </header>
             <main id="register">
@@ -197,10 +198,10 @@
                             <div class="tbl col">
                                 <table>
                                     <colgroup>
-                                        <col class="w10p">
+                                        <col class="w45">
                                         <col>
-                                        <col class="w10p">
-                                        <col class="w15p">
+                                        <col class="w45">
+                                        <col class="w45">
                                         <col>
                                     </colgroup>
                                     <thead>
@@ -232,7 +233,7 @@
                                         </tr>
                                         <tr>
                                             <td>총금액</td>
-                                            <td class="tar" colspan="2">130,000</td>
+                                            <td class="tar">130,000</td>
                                         </tr>
                                         <!-- 부품및 기술료2 -->
                                         <tr onclick="location.href='./cost.html'" class="view">
@@ -256,7 +257,7 @@
                                         </tr>
                                         <tr>
                                             <td>총금액</td>
-                                            <td class="tar" colspan="2">260,000</td>
+                                            <td class="tar">260,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -280,12 +281,7 @@
                                 <div class="txt">
                                     <span class="tit">방문기사 :</span>
                                     <div class="name">
-                                        <div class="inner">
-                                            <select name="select" title="이름" class="sel">
-                                                <option>전체</option>
-                                                <option>이름</option>
-                                            </select>
-                                        </div>
+                                      홍길동
                                     </div>
                                     <div class="sign">
                                         <button class="bt-sign">(서명)</button>
@@ -299,14 +295,17 @@
                                             <input type="text" class="ip-txt">
                                         </div>
                                     </div>
-                                    <div class="sign">(서명)</div>
+                                    <div class="sign">
+                                    <button class="bt-sign">(서명) </button>
+                                        <img src="" alt="sign" class="noImage">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="logo">
-                    <div class="img"><img src="../img/ieetu-logo.svg" alt="ieetu"></div>
+                    <div class="img"><img src="../img/logo/1.svg" alt="ieetu"></div>
                 </div>
             </main>
             <footer id="footer">
@@ -319,6 +318,35 @@
             </footer>
         </div>
     </div>
+        <!-- 로그아웃 확인 -->
+        <section class="modal-boxed" id="logout">
+            <div class="modal-alert w400">
+                <article class="article">
+                    <div class="con"> <b>로그아웃 하시겠습니까? </b>
+                    <p>작성중인 내용은 저장되지 않습니다.</p> </div>
+                </article>
+                <footer class="footer">
+                    <div class="buttons">
+                        <button type="button" class="bt bt-no" onclick="closeModal('logout')">취소</button>
+                        <button type="button" class="bt bt-okay"onclick="location.href='../login/'">확인</button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+<!-- 뒤로가기 확인 -->
+                <section class="modal-boxed" id="logout">
+                    <div class="modal-alert w400">
+                        <article class="article">
+                            <div class="con"> rmf 하시겠습니까? </div>
+                        </article>
+                        <footer class="footer">
+                            <div class="buttons">
+                                <button type="button" class="bt bt-no" onclick="closeModal('logout')">취소</button>
+                                <button type="button" class="bt bt-okay" onclick="location.href='../login/'">확인</button>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
 </body>
 
 </html>

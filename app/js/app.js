@@ -21,13 +21,6 @@ function closeModal(id, opt) {
     $('body').removeClass('act');
     $('body').addClass('out');
 }
-// 외부영역 클릭 시 팝업 닫기
-$(document).mouseup(function (e) {
-    var ModalClose = $(".modal-boxed");
-    if (ModalClose.has(e.target).length === 0) {
-        ModalClose.removeClass("act");
-    }
-});
 
 
 
