@@ -112,49 +112,13 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>접수일자</th>
-                                <td>
-                                    <div class="form minw260">
-                                        <div class="input">
-                                            <input type="date" class="ip-dat">
-                                            <em>~</em>
-                                            <input type="date" class="ip-dat">
-                                        </div>
-                                    </div>
-                                </td>
-                                <th>접수구분</th>
-                                <td colspan="3">
-                                    <div class="inner">
-                                        <select name="select" title="검색항목" class="sel">
-                                            <option>전체</option>
-                                            <option>현장</option>
-                                            <option>통신사</option>
-                                            <option>전화접수</option>
-                                            <option>기타</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <th>진행상태</th>
+                                <th>현장명 </th>
                                 <td>
                                     <div class="inner">
                                         <select name="select" title="검색항목" class="sel">
                                             <option>전체</option>
-                                            <option>준비중</option>
-                                            <option>처리완료</option>
-                                            <option>홀딩</option>
-                                            <option>접수취소</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>결제상태 </th>
-                                <td>
-                                    <div class="inner">
-                                        <select name="select" title="검색항목" class="sel">
-                                            <option>전체</option>
-                                            <option>완료</option>
-                                            <option>미입금 </option>
+                                            <option>선택</option>
+                                            <option>선택 </option>
                                         </select>
                                     </div>
                                 </td>
@@ -171,36 +135,11 @@
                                         </div>
                                     </div>
                                 </td>
-                                <th>입주자 구분</th>
-                                <td>
-                                    <div class="inner">
-                                        <select name="select" title="검색항목" class="sel">
-                                            <option>전체</option>
-                                            <option>회장</option>
-                                            <option>전임회장</option>
-                                            <option>동대표</option>
-                                            <option>입주자</option>
-                                            <option>기타</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>고객명</th>
+                                <th>휴대폰</th>
                                 <td colspan="3">
                                     <div class="form">
                                         <div class="ipt w100p">
-                                            <input type="text" class="ip-txt w100p" placeholder="고객명을 입력해주세요.">
-                                        </div>
-                                    </div>
-                                </td>
-                                <th>처리일자</th>
-                                <td colspan="3">
-                                    <div class="form minw260">
-                                        <div class="input">
-                                            <input type="date" class="ip-dat">
-                                            <em>~</em>
-                                            <input type="date" class="ip-dat">
+                                            <input type="text" class="ip-txt w100p" placeholder="휴대폰번호를 입력해주세요.">
                                         </div>
                                     </div>
                                 </td>
@@ -227,6 +166,9 @@
                         <button type="button" class="bt bt-excell">엑셀다운</button>
                     </div>
                     <div class="button">
+                        <button type="button" class="bt bt-upload">엑셀업로드</button>
+                    </div>
+                    <div class="button">
                         <button type="button" class="bt bt-add"
                             onclick="window.open('receive.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">접수등록</button>
                     </div>
@@ -240,267 +182,170 @@
                         <thead>
                             <tr>
                                 <th>번호</th>
+                                <th>번수번호</th>
                                 <th>접수일자 </th>
-                                <th>접수구분</th>
-                                <th>동/호</th>
-                                <th>입주자구분</th>
-                                <th>고객명</th>
+                                <th>A/S 유형</th>
+                                <th>상태</th>
+                                <th>현장명</th>
+                                <th>A/S 요청자</th>
+                                <th>동</th>
+                                <th>호</th>
                                 <th>연락처</th>
-                                <th>결제상태</th>
-                                <th>입금액</th>
-                                <th>잔액</th>
-                                <th>진행상태</th>
-                                <th>처리일/취소일자</th>
+                                <th>방문일자</th>
                                 <th>설치자</th>
-                                <th>메모</th>
-                                <th>계산서 여부</th>
-                                <th>발행</th>
-                                <th>결제</th>
-                                <th>처리</th>
+                                <th>확인서</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer"
-                                    onclick="window.open('receive.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
-                                    김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>7</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>8</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>9</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                    onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                            </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                             <tr>
                                 <td>10</td>
-                                <td>2022-08-06</td>
-                                <td>기타</td>
-                                <td>103-3132</td>
-                                <td>회장</td>
-                                <td class="pointer">김철수</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td>우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
                                 <td>010-1234-5678</td>
-                                <td>완료</td>
-                                <td class="tar">200,000</td>
-                                <td class="tar">0</td>
-                                <td>처리완료</td>
-                                <td>2022-08-09</td>
-                                <td>smlee</td>
-                                <td>Y</td>
-                                <td>Y</td>
-                                <td><button class="bt bt-pbl" onclick="openModal('vat')">발행</button></td>
-                                <td><button class="bt bt-pay"
-                                        onclick="window.open('payment.html', '결제정보','width=700, height=600, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">결제</button>
-                                </td>
-                                <td><button class="bt bt-ins"
-                                        onclick="window.open('repair.html', '장애처리','width=600, height=800, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">처리</button>
-                                </td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"   onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button></td>
                             </tr>
                         </tbody>
                     </table>

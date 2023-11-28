@@ -1,9 +1,11 @@
 @charset "utf-8";
-
+/* font  */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 @import url('https://webfontworld.github.io/sunn/SUIT.css');
+
+
 *:focus { outline: none } 
 * { line-height: 1.428571429; font-family:'SUIT', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing: border-box; border: 0; margin: 0; padding: 0 } 
 body { margin: 0; min-width: 1600px; max-width: 100%; background: #f7f7f7 } 
@@ -168,6 +170,10 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .srch { display: flex; flex-direction: row; justify-content: space-between; align-items: center; } 
 #contain .button .bt-excell { background-color:#3F7D55; border:1px solid #3F7D55; color:#fff; } 
 #contain .button .bt-excell:hover { background-color: #2C563B; border: 1px solid #2C563B; } 
+#contain .button .bt-upload { background-color:#FF7171; border:1px solid #FF7171; color:#fff; } 
+#contain .button .bt-upload:hover { background-color: #DB5A5A; border: 1px solid #DB5A5A; } 
+#contain .button .bt-list { background-color: #000; color: #fff; } 
+
 
 /* 테이블 */
 #contain .search .table { width: 100%; padding: 20px; } 
@@ -217,9 +223,10 @@ table.col tbody td:nth-child(1) { text-align: center }
 table.col tbody td.tal { text-align: left; } 
 table.col tbody td a { padding: 2px 0; color: #555; border-bottom: 1px solid #eee; transition: border .2s } 
 table.col tbody td a:hover { color: #000; border-bottom: 1px solid #000; transition: border .1s } 
-table.col .bt { display: inline-block; padding: 6px 12px; line-height: 1.2; color: #282f44; border: 1px solid #eee; background: #fff; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px } 
+table.col .bt { display: inline-block; padding: 6px 12px; line-height: 1.2; color: #282f44; border: 1px solid #eee; background: #fff; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px; } 
 table.col .bt:hover { text-decoration: underline; box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 10%) } 
 table.col .bt-pbl { background-color: #2B78E4; color: #fff; font-weight: 600; } 
+table.col .bt-cnf { background-color: #2B78E4; color: #fff; font-weight: 600; } 
 table.col .bt-pay { background-color: #FF7171; color: #fff; font-weight: 600; } 
 table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; } 
 
@@ -237,6 +244,13 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl th .bullet { display: flex; align-items: center; position: relative; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #333 } 
 #contain .contain .table .tbl th .bullet::before { content: ''; position: absolute; left: -8px; width: 4px; height: 4px; background: #2B78E4; border-radius: 50px; } 
 #contain .contain .table .tbl .form { display: flex; align-items: center; width: 100%; gap: 10px; } 
+#contain .contain .table .tbl .form .input { display: flex; flex-direction: row; align-items: center; gap: 5px; width: 100%; } 
+#contain .contain .table .tbl .form .input .ip-dat { padding: 10px; width: 100%; font-size: 14px; border: 1px solid #ddd; border-radius: 2px; } 
+#contain .contain .table .tbl .form .input .ip-dat:valid { color: #333; } 
+#contain .contain .table .tbl .ipt { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#contain .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
+#contain .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+#contain .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
 #contain .contain .table .tbl .bt { height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px; } 
 #contain .contain .table .tbl .bt-check { width: 200px; background-color: #2B78E4; color: #fff; } 
 #contain .contain .table .tbl td .inner { display: flex; align-items: center; } 
@@ -248,6 +262,8 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
 #contain .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
 #contain .contain .table .tbl .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
+#contain .contain .table .tbl .textarea { width: 100%; display: flex; } 
+#contain .contain .table .tbl .textarea textarea { border: 1px solid #ddd; width: 100%; height: 100px; padding: 10px; resize: none; } 
 
 /* pagenation */
 .paging { clear:both; text-align:center; margin-top:20px } 
@@ -256,7 +272,7 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 .paging .page .pag i { display:block; width:30px; height:30px; background-repeat:no-repeat; background-position:50% 50% } 
 .paging .page .pag,
 .paging .page .num { display:block; margin:0 4px; width:30px; line-height:28px; font-size:12px; letter-spacing:-.6px; color:#999; border:1px solid #ccc; background:#fff } 
-.paging .page strong.num { font-weight:900; color:#333; border:1px solid #333 } 
+.paging .page .current { font-weight:900; color:#333; border:1px solid #333 } 
 .paging .ico-pprev { background-image:url("../img/ico-pprev.svg") } 
 .paging .ico-prev { background-image:url("../img/ico-prev.svg") } 
 .paging .ico-next { background-image:url("../img/ico-next.svg") } 

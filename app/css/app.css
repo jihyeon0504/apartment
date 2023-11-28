@@ -276,7 +276,8 @@ table.col tbody td.tar { text-align: right; }
 #inquiry .title { padding: 10px 0; } 
 
 /* A/S처리확인서 */
-#confirm .table table { border-collapse: collapse; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 
+#confirm{margin-top: 20px;}
+#confirm .table table { border-collapse: collapse; border: 1px solid #ddd; } 
 #confirm .table table tr { border-bottom: 1px solid #ddd; } 
 #confirm .table table .tbltitle { background-color: #f5f5f5; } 
 #confirm .table table .tbltitle th { text-align: center; color: #555; } 
