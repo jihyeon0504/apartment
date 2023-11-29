@@ -1,10 +1,10 @@
 @charset "utf-8";
-/* font  */
+
+/* font */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 @import url('https://webfontworld.github.io/sunn/SUIT.css');
-
 
 *:focus { outline: none } 
 * { line-height: 1.428571429; font-family:'SUIT', 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'dotum', '돋움', 'gulim', '굴림', 'Tahoma'; box-sizing: border-box; border: 0; margin: 0; padding: 0 } 
@@ -264,6 +264,15 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
 #contain .contain .table .tbl .textarea { width: 100%; display: flex; } 
 #contain .contain .table .tbl .textarea textarea { border: 1px solid #ddd; width: 100%; height: 100px; padding: 10px; resize: none; } 
+
+#contain .contain .con { padding: 20px 0; } 
+#contain .contain .con .table { padding: 10px 0; } 
+#contain .contain .con .sum { width: 100%; display: flex; flex-direction: row; justify-content:flex-start; align-items: center; gap: 5px; padding: 10px; } 
+#contain .contain .con .sum .tit { font-size: 20px; font-weight: 600; letter-spacing: -0.75px; color: #333; } 
+#contain .contain .con .sum .money { font-size: 20px; letter-spacing: -0.75px } 
+#contain .contain .con .sum .money b { letter-spacing: 0; color: #2B78E4; font-weight: 900; } 
+
+
 
 /* pagenation */
 .paging { clear:both; text-align:center; margin-top:20px } 

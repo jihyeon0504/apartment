@@ -173,7 +173,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="tal">상태</th>
+                                            <th class="tal"><strong class="bullet">상태</strong></th>
                                             <td>
                                                 <div class="inner">
                                                     <select name="select" title="검색항목" class="sel">
@@ -181,6 +181,48 @@
                                                         <option>접수</option>
                                                         <option>완료</option>
                                                     </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tal"><strong class="bullet">접수업체</strong></th>
+                                            <td>
+                                                <div class="inner">
+                                                    <select name="select" title="접수업체" class="sel">
+                                                        <option>선택</option>
+                                                        <option>접수업체</option>
+                                                        <option>접수업체</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tal"><strong class="bullet">결제구분</strong></th>
+                                            <td>
+                                                <div class="inn">
+                                                    <div class="ipt">
+                                                        <input type="radio" id="cash" name="check" class="skip">
+                                                        <label for="cash"> <span>현금</span></label>
+                                                    </div>
+                                                    <div class="ipt">
+                                                        <input type="radio" id="transfer" name="check" class="skip">
+                                                        <label for="transfer"> <span>이체</span></label>
+                                                    </div>
+                                                    <div class="ipt">
+                                                        <input type="radio" id="card" name="check" class="skip">
+                                                        <label for="card"> <span>카드</span></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tal"><strong class="bullet">비용</strong></th>
+                                            <td>
+                                                <div class="form">
+                                                    <div class="ipt w100p">
+                                                        <input type="text" class="ip-txt w100p"
+                                                            placeholder="비용을 입력해주세요">
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
@@ -296,7 +338,7 @@
                                         </div>
                                     </div>
                                     <div class="sign">
-                                        <button class="bt-sign" onclick="location.href='./sign.html'" >(서명) </button>
+                                        <button class="bt-sign" onclick="location.href='./sign.html'">(서명) </button>
                                         <img src="" alt="sign" onerror="this.style.display='none'">
                                     </div>
                                 </div>

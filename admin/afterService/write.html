@@ -226,7 +226,7 @@
                             </tr>
                             <tr>
                                 <th class="tal">A/S유형</th>
-                                <td>
+                                <td colspan="3">
                                     <div class="inn">
                                         <div class="ipt">
                                             <input type="radio" id="asType_1" name="asType" class="skip"
@@ -240,7 +240,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <th class="tal"><strong class="bullet">상태</strong></th>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">접수상태</strong></th>
                                 <td>
                                     <div class="inner">
                                         <select name="select" title="상태" class="sel">
@@ -250,10 +252,8 @@
                                         </select>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <th class="tal"><strong class="bullet">접수업체</strong></th>
-                                <td colspan="3">
+                                <td>
                                     <div class="inner">
                                         <select name="select" title="업체선택" class="sel">
                                             <option>선택</option>
@@ -263,8 +263,95 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <th class="tal">결제구분</th>
+                                <td>
+                                    <div class="inn">
+                                        <div class="ipt">
+                                            <input type="radio" id="cash" name="asType" class="skip" data-label="결제구분">
+                                            <label for="cash"> <span>현금</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="transfer" name="asType" class="skip"
+                                                data-label="결제구분">
+                                            <label for="transfer"> <span>이체</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="card" name="asType" class="skip" data-label="결제구분">
+                                            <label for="card"> <span>카드</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <th class="tal">비용</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="비용을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">메모</th>
+                                <td colspan="3">
+                                    <div class="textarea">
+                                        <textarea placeholder="메모내용을 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="con">
+                <div class="titlewrap">
+                    <div class="title">
+                        <h3>부품비 및 기술료</h3>
+                    </div>
+                    <div class="buttons">
+                        <div class="button">
+                            <button type="button" class="bt bt-add"
+                                onclick="window.open('cost.html', '부품비및기술료추가','width=750, height=550, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">추가</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="col fixed">
+                            <colgroup>
+                                <col class="w80">
+                                <col>
+                                <col class="w80">
+                                <col class="w200">
+                                <col class="w200">
+                                <col class="w200">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>항목 </th>
+                                    <th>수량</th>
+                                    <th>단가</th>
+                                    <th>기술료</th>
+                                    <th>금액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="tal">주요부품</td>
+                                    <td>1</td>
+                                    <td class="tar">200,000</td>
+                                    <td class="tar">50,000</td>
+                                    <td class="tar">250,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="sum">
+                    <div class="tit">합계 :</div>
+                    <div class="money"><b>390,000</b>원 <small>(VAT포함)</small></div>
                 </div>
             </div>
         </section>
@@ -301,7 +388,8 @@
     <div class="modal-alert w400">
         <article class="article">
             <div class="con"> <b>목록으로 이동 하시겠습니까?</b>
-                <p>작성하신 내용이 저장되지 않을 수 있습니다.</p> </div>
+                <p>작성하신 내용이 저장되지 않을 수 있습니다.</p>
+            </div>
         </article>
         <footer class="footer">
             <div class="buttons">
