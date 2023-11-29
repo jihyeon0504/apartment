@@ -164,6 +164,10 @@
                     <p>[조회수건수 : 총 <b>210</b>건]</p>
                 </div>
                 <div class="buttons">
+                    <div class="check">
+                        <input type="checkbox" id="delayList" name="delayList" class="skip" data-label="delayList">
+                        <label for="delayList"> <span>미처리내역만보기</span></label>
+                    </div>
                     <div class="button">
                         <button type="button" class="bt bt-excell">엑셀다운</button>
                     </div>
@@ -232,10 +236,10 @@
                                         onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="delay">
                                 <td>3</td>
                                 <td>20231124-001</td>
-                                <td>2023-11-24</td>
+                                <td class="delay">2023-10-24</td>
                                 <td>유상</td>
                                 <td>접수</td>
                                 <td>우리현대아파트</td>

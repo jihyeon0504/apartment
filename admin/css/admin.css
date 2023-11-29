@@ -158,6 +158,10 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .button-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 10px; } 
 #contain .buttons { display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding-bottom: 20px } 
 #contain .buttons strong { display: inline-block; line-height: 52px; vertical-align: middle } 
+#contain .buttons .check input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
+#contain .buttons .check input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; } 
+#contain .buttons .check input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #FF7171; background: #FF7171 url(../img/check2.svg) no-repeat 50% 50%;} 
+#contain .buttons .check span { font-size: 14px; font-weight: 500; font-size: 14px; color: #727272;} 
 #contain .button .bt { display: inline-block; padding: 0 24px; height: 40px; line-height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px } 
 #contain .button .bt:hover { box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 10%) } 
 #contain .button .bt+.bt { margin-left: 10px } 
@@ -217,6 +221,8 @@ table.col thead tr.pd8 th { padding: 8px 0 !important }
 table.col tbody tr { height: 40px } 
 table.col tbody tr:hover { background: #fafafb } 
 table.col tbody tr.yet { background-color: #f7fbf7 } 
+table.col tbody tr.delay{background-color: #FFEDED50;}
+table.col tbody tr.delay > .delay{color: #FF7171;font-weight: 800 !important;}
 table.col tbody tr.yet:hover { background: #fafafb } 
 table.col tbody td { padding: 8px; font-size: 14px; text-align: center; color: #555; border: 1px solid #eee; border-bottom: 1px solid #eee; word-break: keep-all; word-wrap: break-word; } 
 table.col tbody td:nth-child(1) { text-align: center } 

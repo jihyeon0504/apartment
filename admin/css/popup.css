@@ -9,6 +9,7 @@
 [id^="popup"] .top .buttons .bt-add { background-color: #2B78E4; color: #fff; } 
 [id^="popup"] .top .buttons .bt-save { background-color: #525460; color: #fff; } 
 [id^="popup"] .top .buttons .bt-close { background-color: #000000; color: #fff; } 
+[id^="popup"] .top .buttons .bt-int { background-color: #FFF; color: #333; border: 1PX solid #ddd;} 
 
 [id^="popup"] .contain { width: 100%; padding: auto; padding: 20px; background: #FFF; box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.08), 0px 2px 4px -2px rgba(24, 39, 75, 0.12); } 
 [id^="popup"] .contain .tit h3 { font-size: 16px; letter-spacing: -0.75px; font-weight: 700; } 
@@ -92,6 +93,10 @@
 [id^="popup"] .contain .bt-array.on { background-color:#225DAF; color: #fff; } 
 [id^="popup"] .contain .bt:hover { box-shadow:8px 8px 20px 0 rgb(0 0 0 / 10%) } 
 
+/* 서명 */
+[id^="popup"] .contain .signWrap{width: 100%;padding: 10px;}
+[id^="popup"] .contain .signWrap .canvasBox{width: 100%;min-height: 300px;}
+
 [id^="popup"] .none { display: none; } 
 
 
@@ -114,11 +119,14 @@
 [id^="popup"].confirm .txt-wrap .txt .name { min-width: 100px; max-width: 100px; } 
 [id^="popup"].confirm .txt-wrap .txt .date{width: 100%;}
 [id^="popup"].confirm .txt-wrap .txt .sign { position: relative; } 
-[id^="popup"].confirm .txt-wrap .txt .sign span { padding: 10px; font-size: 14px; color: #727272; letter-spacing: -0.75px; } 
+[id^="popup"].confirm .txt-wrap .txt .sign .bt-sign { padding: 10px; font-size: 14px; color: #727272; letter-spacing: -0.75px; } 
 [id^="popup"].confirm .txt-wrap .txt .sign img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; object-fit: contain; } 
 [id^="popup"].confirm .txt-wrap .txt .sign .noImage { display: none; } 
 [id^="popup"].confirm .logo{margin: 20px auto 0;width: 50px;}
 [id^="popup"].confirm .logo img{width: 100%;object-fit: contain;}
+
+
+
 
 
 /* modal */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서명</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw600">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>서명</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-int">초기화</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="signWrap">
+                    <div class="canvasBox"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<!-- 저장 확인 모달 -->
+<section class="modal-boxed" id="save1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 저장 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('save1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('save1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 추가 확인 모달 -->
+<section class="modal-boxed" id="add1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 추가 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('add1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('add1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 환불 확인 모달 -->
+<section class="modal-boxed" id="refund1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 환불 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('refund1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('refund1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+
+</html>
