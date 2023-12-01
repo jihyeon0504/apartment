@@ -91,7 +91,7 @@ body.min #contain { padding: 50px 0 0 100px }
 #header .header { display: flex; align-items: center; justify-content: space-between; position: fixed; z-index: 2; top: 0; right: 0; left: 0; height: 50px; background: #fff; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%) } 
 #header .header .lnb { display: flex; align-items: center; padding: 0 20px } 
 #header .header .hello { display: flex; align-items: center; padding: 0 20px 0 0 } 
-#header .header .hello .name { font-size: 14px; font-weight: 400; vertical-align: middle } 
+#header .header .hello .name { font-size: 14px; font-weight: 400; vertical-align: middle;cursor: pointer; } 
 #header .header .hello .name strong { color: #333333 } 
 #header .header .hello .name span { color: #909194 } 
 #header .header .hello .ico { margin-right: 6px; width: 30px; height: 30px; border-radius: 30px; overflow: hidden; vertical-align: middle; background: #eee } 
