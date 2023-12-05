@@ -19,37 +19,72 @@
             <div class="tit">
                 <h3>A/S 처리 확인서</h3>
             </div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>접수번호: I20231124-001</td>
-                        <td>접수일자: 2023-11-24</td>
-                    </tr>
-                    <tr>
-                        <td>현장명: 우리현대아파트</td>
-                        <td>방문일자: </td>
-                    </tr>
-                    <tr>
-                        <td>입주자: 1동 2호</td>
-                        <td>자택: <br>휴대폰: 113-4113-41134</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="title">처리내역</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">의뢰내용: 고장 고장 고장 고장 고장 고장 고장 고장 고장 고장 고장 고장 고장</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">고장원인: </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">A/S내용: 1</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">A/S유형: </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table">
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="w20p">
+                            <col class="w30p">
+                            <col class="w20p">
+                            <col class="w30p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="tac">접수번호</th>
+                                <td class="tac">I20231124-001</td>
+                                <th class="tac">접수일자</th>
+                                <td class="tac">2023-11-24</td>
+                            </tr>
+                            <tr>
+                                <th class="tac">현장명</th>
+                                <td class="tac">우리현대아파트</td>
+                                <th class="tac">방문일자</th>
+                                <td class="tac"></td>
+                            </tr>
+                            <tr>
+                                <th class="tac" rowspan="2">입주자</th>
+                                <td rowspan="2" class="tac">1동 2호</td>
+                                <th class="tac">자택</th>
+                                <td class="tac"></td>
+                            </tr>
+                            <tr>
+                                <th class="tac">핸드폰 </th>
+                                <td class="tac"></td>
+                            </tr>
+                            <tr>
+                                <th class="tac">의뢰내용</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="title">처리내역</td>
+                            </tr>
+                            <tr>
+                                <th class="tac">고장원인</th>
+                                <td colspan="3">고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인고장원인</td>
+                            </tr>
+                            <tr>
+                                <th class="tac">A/S내용</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th class="tac">A/S유형</th>
+                                <td colspan="3">
+                                    <div class="inn w50p">
+                                        <div class="ipt">
+                                            <input type="radio" id="no" name="check" class="skip" checked disabled>
+                                            <label for="no"> <span>무상</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="yes" name="check" class="skip" disabled>
+                                            <label for="yes"> <span>유상</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="ttl">부품비 및 기술료</div>
             <table>
                 <thead>
@@ -72,6 +107,30 @@
                         <td class="tar">250,000</td>
                     </tr>
                     <tr>
+                        <td class="tac">2</td>
+                        <td></td>
+                        <td class="tac"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                    </tr>
+                    <tr>
+                        <td class="tac">3</td>
+                        <td></td>
+                        <td class="tac"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                    </tr>
+                    <tr>
+                        <td class="tac">4</td>
+                        <td></td>
+                        <td class="tac"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                        <td class="tar"></td>
+                    </tr>
+                    <tr>
                         <td class="tac"><b>합계</b></td>
                         <td colspan="5"> <b class="money">250,000</b>원<small>(VAT포함)</small></td>
                     </tr>
@@ -82,7 +141,7 @@
                     <tr>
                         <td>
                             <div class="text">
-                                <div class="title">A/S부품비 및 기술료는 금액산출 후 거래명세표를 청구합니다. </div>
+                                <div class="title">A/S부품비 및 기술료는 금액산출 후, 거래명세표를 청구합니다. </div>
                                 <div class="txt-wrap">
                                     <div class="txt">
                                         <span>방문일자 :</span>
@@ -106,7 +165,8 @@
                                             </div>
                                         </div>
                                         <div class="sign">
-                                            <button class="bt-sign"  onclick="window.open('sign.html', '서명','width=600, height=500, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">(서명)</button>
+                                            <button class="bt-sign"
+                                                onclick="window.open('sign.html', '서명','width=600, height=500, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">(서명)</button>
                                             <img src="" alt="sign" onerror="this.style.display='none'">
                                         </div>
                                     </div>
