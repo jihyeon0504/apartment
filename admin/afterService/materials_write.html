@@ -1,0 +1,270 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>아파트 장비 판매 관리 시스템</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header-top -->
+        <section class="header">
+            <h1><a href="../sales/index.html"><strong>아파트장비 </strong>판매관리시스템</a></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="../img/apartment.svg" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="memb">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="#"><i class="fas fa-power-off"></i><span class="skip">로그아웃</span></a>
+                </span>
+            </div>
+        </section>
+        <!-- header-side -->
+        <aside id="gnb">
+            <div class="gnb-btn"></div>
+            <nav class="gnb">
+                <div class="depth1">
+                    <div class="dp1"> <a href="../sales/index.html" class="da1">
+                            <i><img src="../img/dash-ico01.svg" alt="장비판매관리"></i>
+                            <span>장비판매관리 </span></a>
+                        <ul class="depth2">
+                            <li><a href="../sales/index.html">장비판매관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../afterService/index.html" class="da1"><i><img
+                                    src="../img/dash-ico02.svg" alt="장애처리관리"></i>
+                            <span>장애처리관리</span>
+                            <div class="new"></div>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../afterService/index.html">장애처리관리</a></li>
+                            <li><a href="../afterService/materials.html">자재관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../sistem/user.html" class="da1"><i><img src="../img/dash-ico03.svg"
+                                    alt="시스템관리"></i>
+                            <span>시스템관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../sistem/user.html">사용자관리</a></li>
+                            <li><a href="../sistem/index.html">코드관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../apartment/index.html" class="da1"><i><img src="../img/dash-ico04.svg"
+                                    alt="아파트관리"></i>
+                            <span>아파트관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../apartment/index.html">아파트관리</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </aside>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                $(".gnb .dp1").click(function () {
+                    var list = $(this).index();
+                    $(".gnb .dp1").removeClass("act");
+                    $(this).addClass("act");
+
+                    $(".depth2").hide();
+                    $(".depth2").eq(list).show();
+                });
+                $(".gnb-btn").click(function () {
+                    $("body").stop().toggleClass("min");
+                    return false;
+                });
+            });
+            //]]>
+        </script>
+    </header>
+
+    <!-- main -->
+    <main id="contain">
+        <section class="location">
+            <div class="titles">
+                <h2>자재관리</h2>
+                <b>자재등록</b>
+            </div>
+        </section>
+        <!-- 접수등록 -->
+        <section class="contain">
+            <div class="titlewrap">
+                <div class="title">
+                    <h3>자재등록정보</h3>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-add" onclick="openModal('save1')">저장</button>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="bt bt-list" onclick="openModal('list')">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w35p">
+                            <col class="w15p">
+                            <col class="w35p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="tal"><strong class="bullet">제품명</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="제품명을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">부품명</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="부품명을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">적용모델</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="적용모델을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">부품코드</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="부품코드를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">부품규격</strong></th>
+                                <td colspan="3">
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="적용부품규격을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">소비자가(VAT)</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="소비자가를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">재고현황</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="재고현황을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">부품이미지</strong></th>
+                                <td colspan="3">
+                                    <div class="fileimg">
+                                        <div class="item">
+                                            <input type="file" id="upfile1">
+                                            <label for="upfile1"></label>
+                                        </div>
+                                        <div class="item">
+                                            <div class="image" style="background-image:url('../img/part.jpg')"></div>
+                                            <button type="button" class="btn_del" onclick="openModal('del')"><span
+                                                    class="skip">삭제</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
+    </footer>
+</body>
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- 저장 확인 모달 -->
+<section class="modal-boxed" id="save1">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> 저장 하시겠습니까? </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('save1')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('save1')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 목록이동모달 -->
+<section class="modal-boxed" id="list">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>목록으로 이동 하시겠습니까?</b>
+                <p>작성하신 내용이 저장되지 않을 수 있습니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('list')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('list')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 이미지삭제모달 -->
+<section class="modal-boxed" id="del">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>이미지를 삭제하시겠습니까?</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('del')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('del')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+
+</html>

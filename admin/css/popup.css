@@ -9,12 +9,15 @@
 [id^="popup"] .top .buttons .bt-add { background-color: #2B78E4; color: #fff; } 
 [id^="popup"] .top .buttons .bt-save { background-color: #525460; color: #fff; } 
 [id^="popup"] .top .buttons .bt-close { background-color: #000000; color: #fff; } 
+[id^="popup"] .top .buttons .bt-slct { background-color: #FF7171; color: #fff; } 
 [id^="popup"] .top .buttons .bt-int { background-color: #FFF; color: #333; border: 1PX solid #ddd; } 
 
 [id^="popup"] .contain { width: 100%; padding: auto; padding: 20px; background: #FFF; box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.08), 0px 2px 4px -2px rgba(24, 39, 75, 0.12); } 
+[id^="popup"] .contain + .contain { margin-top: 20px; } 
 [id^="popup"] .contain .tit h3 { font-size: 16px; letter-spacing: -0.75px; font-weight: 700; } 
 [id^="popup"] .contain .table { width: 100%; padding: 20px 0; } 
 [id^="popup"] .contain .table .tbl { width: 100%; } 
+[id^="popup"] .contain .table .tbl .fixed { table-layout: fixed; } 
 [id^="popup"] .contain .table .tbl table { width: 100%; border-collapse: collapse; border-top: 1px solid #DDD; border-bottom: 1px solid #DDD; } 
 [id^="popup"] .contain .table .tbl tr { height: 100%; } 
 [id^="popup"] .contain .table .tbl tr+tr { border-top: 1px solid #ddd; } 
@@ -22,6 +25,7 @@
 [id^="popup"] .contain .table .tbl th .bullet { display: flex; align-items: center; position: relative; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #333 } 
 [id^="popup"] .contain .table .tbl th .bullet::before { content: ''; position: absolute; left: -8px; width: 4px; height: 4px; background: #2B78E4; border-radius: 50px; } 
 [id^="popup"] .contain .table .tbl td { padding: 10px; font-size: 14px; } 
+[id^="popup"] .contain .table .tbl .fixed.elp td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
 [id^="popup"] .contain .table .tbl td .inner { display: flex; align-items: center; } 
 [id^="popup"] .contain .table .tbl td .inner .input { display: flex; flex-direction: row; align-items: center; } 
 [id^="popup"] .contain .table .tbl td .sign { position: relative; } 
@@ -52,7 +56,7 @@
 [id^="popup"] .contain .table .tbl input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
 [id^="popup"] .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
 [id^="popup"] .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
-[id^="popup"] .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 30px;  margin: 0 auto; } 
+[id^="popup"] .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; margin: 0 auto; } 
 [id^="popup"] .contain .table .tbl .textarea { width: 100%; display: flex; } 
 [id^="popup"] .contain .table .tbl .textarea textarea { border: 1px solid #ddd; width: 100%; height: 100px; padding: 10px; resize: none; } 
 [id^="popup"] .contain .table .tbl .money { text-align: right; font-size: 20px; font-weight: 700; color: #333; } 
@@ -78,6 +82,8 @@
 [id^="popup"] .contain table.col td .money s { color: #727272; } 
 [id^="popup"] .contain table.col td .form .input { display: flex; flex-direction: row; align-items: center; gap: 5px; width: 100%; } 
 [id^="popup"] .contain table.col td .bt-refund { padding: 10px 20px; background-color: #2B78E4; color: #fff; } 
+[id^="popup"] .contain table.col td .bt-cnf { font-size: 12px; } 
+[id^="popup"] .contain table.col td .bt-slct { font-size: 12px; background-color: #FF7171; color: #fff; } 
 [id^="popup"] .contain table.col .ipt { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
 [id^="popup"] .contain table.col .ipt .ip-txt { border: 1px solid #ddd; padding: 10px; font-size: 14px; } 
 [id^="popup"] .contain table.col .ipt .ip-txt:focus { border: 1px solid #2a3044; } 
@@ -98,6 +104,9 @@
 [id^="popup"] .contain .bt-array { padding: 0 20px;; background-color: #ddd; color: #727272; } 
 [id^="popup"] .contain .bt-array.on { background-color:#225DAF; color: #fff; } 
 [id^="popup"] .contain .bt:hover { box-shadow:8px 8px 20px 0 rgb(0 0 0 / 10%) } 
+[id^="popup"] .contain .button-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 10px; } 
+[id^="popup"] .contain .button-wrap .button { margin-top:0; } 
+[id^="popup"] .contain .button-wrap .bt-srh { padding: 0 60px; background-color: #525460; border-radius: 5px; color: #fff; font-size: 14px; transition: all 0.2s; } 
 
 /* 서명 */
 [id^="popup"] .contain .signWrap { width: 100%; padding: 10px; } 
@@ -110,11 +119,14 @@
 /* A/S처리확인서 */
 [id^="popup"].confirm .contain .tit { width: 100%; text-align: center; margin-bottom: 20px; } 
 [id^="popup"].confirm .contain .tit h3 { font-size: 20px; letter-spacing: -0.75px; color: #333; font-weight:900; } 
-[id^="popup"].confirm .table .tbl tr{height: 50px;}
-[id^="popup"].confirm .table .tbl th{background-color:#f9f9f9;border: 1px solid #ddd;}
-[id^="popup"].confirm .table .tbl td{white-space: initial;}
+[id^="popup"].confirm .table .tbl tr { height: 50px; } 
+[id^="popup"].confirm .table .tbl th { background-color:#f9f9f9; border: 1px solid #ddd; } 
+[id^="popup"].confirm .table .tbl td { white-space: initial; } 
 [id^="popup"].confirm table { width: 100%; border-collapse: collapse; border-spacing: 0; white-space: nowrap; } 
 [id^="popup"].confirm table td { padding: 8px; font-size: 14px; font-weight: 500; color: #555; border: 1px solid #ddd; border-bottom: 1px solid #ddd; word-wrap: break-word; padding: 10px; font-size: 14px; } 
+[id^="popup"].confirm table td .item { width: 100%; } 
+[id^="popup"].confirm table td .item .img { width: 100%; } 
+[id^="popup"].confirm table td .item .img img { width: 100%; } 
 [id^="popup"].confirm table .money { color: #225DAF; font-size: 16px; } 
 [id^="popup"].confirm table td.title { background-color: #727272; text-align: center; font-weight: 600; letter-spacing: -0.75px; font-size: 15px; color: #fff; } 
 [id^="popup"].confirm table thead tr { height: 50px } 
@@ -134,7 +146,6 @@
 [id^="popup"].confirm .txt-wrap .txt .sign .noImage { display: none; } 
 [id^="popup"].confirm .logo { margin: 20px auto 0; width: 50px; } 
 [id^="popup"].confirm .logo img { width: 100%; object-fit: contain; } 
-
 
 
 
