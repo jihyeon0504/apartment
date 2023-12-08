@@ -25,6 +25,7 @@
 [id^="popup"] .contain .table .tbl th .bullet { display: flex; align-items: center; position: relative; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #333 } 
 [id^="popup"] .contain .table .tbl th .bullet::before { content: ''; position: absolute; left: -8px; width: 4px; height: 4px; background: #2B78E4; border-radius: 50px; } 
 [id^="popup"] .contain .table .tbl td { padding: 10px; font-size: 14px; } 
+[id^="popup"] .contain .table .tbl td .item .img img { width: 100%; } 
 [id^="popup"] .contain .table .tbl .fixed.elp td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
 [id^="popup"] .contain .table .tbl td .inner { display: flex; align-items: center; } 
 [id^="popup"] .contain .table .tbl td .inner .input { display: flex; flex-direction: row; align-items: center; } 
@@ -107,7 +108,7 @@
 [id^="popup"] .contain .button-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 10px; } 
 [id^="popup"] .contain .button-wrap .button { margin-top:0; } 
 [id^="popup"] .contain .button-wrap .bt-srh { padding: 0 60px; background-color: #525460; border-radius: 5px; color: #fff; font-size: 14px; transition: all 0.2s; } 
-
+[id^="popup"] .contain .button-wrap .bt-slct { padding: 0 60px; font-size: 14px; background-color: #FF7171; color: #fff; } 
 /* 서명 */
 [id^="popup"] .contain .signWrap { width: 100%; padding: 10px; } 
 [id^="popup"] .contain .signWrap .canvasBox { width: 100%; min-height: 300px; } 
