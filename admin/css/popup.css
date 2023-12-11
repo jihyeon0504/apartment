@@ -52,11 +52,11 @@
 [id^="popup"] .contain .table .tbl select option { font-size: 14px; } 
 [id^="popup"] .contain .table .tbl input:focus[type="text"] { border: 1px solid #323232 } 
 [id^="popup"] .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-[id^="popup"] .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-[id^="popup"] .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+[id^="popup"] .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+[id^="popup"] .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
 [id^="popup"] .contain .table .tbl input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-[id^="popup"] .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-[id^="popup"] .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+[id^="popup"] .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+[id^="popup"] .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../../img/admincheck2.svg) no-repeat 50% 50%; } 
 [id^="popup"] .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; margin: 0 auto; } 
 [id^="popup"] .contain .table .tbl .textarea { width: 100%; display: flex; } 
 [id^="popup"] .contain .table .tbl .textarea textarea { border: 1px solid #ddd; width: 100%; height: 100px; padding: 10px; resize: none; } 

@@ -129,15 +129,15 @@ img.col { width:100%; height:auto }
 /* header */
 #header { position: sticky; z-index: 99; top: 0; background-color: #fff; transition: all 0.3s; } 
 #header .title { display: flex; align-items: center; justify-content: center; position: relative; height: 4rem; box-shadow: 0 0.2rem 0.5rem #00000010; } 
-#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 4rem; height: 4rem; background: url(../img/before.svg) no-repeat 50% 50%; } 
+#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 4rem; height: 4rem; background: url(../../img/app/before.svg) no-repeat 50% 50%; } 
 #header .title .tit { font-size: 20px; letter-spacing: -0.5px; } 
-#header .title .logout { position: absolute; top: 0; right: 0; display: block; width: 4rem; height: 4rem; background: url(../img/logout.svg) no-repeat 50% 50%; } 
+#header .title .logout { position: absolute; top: 0; right: 0; display: block; width: 4rem; height: 4rem; background: url(../../img/app/logout.svg) no-repeat 50% 50%; } 
 
 /* login */
 #login .loginWrap { display: flex; flex-direction: column; justify-content: center; height: 100vh; } 
 #login .loginWrap .title { display: flex; flex-direction: column; align-items: center; } 
 #login .loginWrap .title .img { width: 150px; height: 150px; display: block; margin: 0 auto; } 
-#login .loginWrap .title .img h1 { background: url(../img/apartment.svg) no-repeat; background-size: contain; width: 100%; height: 100%; } 
+#login .loginWrap .title .img h1 { background: url(../../img/app/apartment.svg) no-repeat; background-size: contain; width: 100%; height: 100%; } 
 #login .loginWrap .title .tit p { font-family: SUITE; font-size: 18px; letter-spacing: -0.75px; font-weight: 600; } 
 #login .loginWrap .title .tit b { font-weight: 800; color: #225DAF; } 
 #login .login-form { padding:40px 0 0 0 } 
@@ -149,9 +149,9 @@ img.col { width:100%; height:auto }
 #login .login-form .wrap .input .ipt:focus::placeholder { color:#333 } 
 #login .login-form .wrap .input .ipt.not { border:1.5px solid #f3132c; background:#fff } 
 #login .login-form .wrap .input .ipt-error { display:flex; align-items:center; gap:4px; height:30px; font-size:14px; letter-spacing:-1px; color:#f3132c } 
-#login .login-form .wrap .input .ipt-error:before { content:''; width:14px; height:14px; background:url(../img/error-ico.svg)no-repeat 0 0; background-size:14px auto } 
+#login .login-form .wrap .input .ipt-error:before { content:''; width:14px; height:14px; background:url(../../img/app/error-ico.svg)no-repeat 0 0; background-size:14px auto } 
 #login .login-form .wrap .input .ipt-inform { display:none; align-items:center; gap:4px; margin:3px 0 0; height:20px; font-size:14px; letter-spacing:-1px; color:#f3132c } 
-#login .login-form .wrap .input .ipt-inform:before { content:''; width:14px; height:14px; background:url(../img/error-ico.svg)no-repeat 0 0; background-size:14px auto } 
+#login .login-form .wrap .input .ipt-inform:before { content:''; width:14px; height:14px; background:url(../../img/app/error-ico.svg)no-repeat 0 0; background-size:14px auto } 
 #login .login-form .button { margin:20px 0 0 0 } 
 #login .login-form .button .login-btn { height:48px; width:100%; background-color:#5F6368; color:#fff; font-size:16px; font-weight:600; border-radius: 5px; } 
 #login .login-form .button .login-btn.act { background-color:#225DAF; color:#fff } 
@@ -164,12 +164,12 @@ img.col { width:100%; height:auto }
 #main .mainWarp .button .inquiry { background-color: #2B78E4; } 
 #main .mainWarp .button .register { background-color: #393939; } 
 #main .mainWarp .button i { width: 37px; height: 37px; background-size: contain; } 
-#main .mainWarp .button .inquiry i { background:url(../img/inq.svg) no-repeat; } 
-#main .mainWarp .button .register i { background:url(../img/reg.svg) no-repeat; } 
+#main .mainWarp .button .inquiry i { background:url(../../img/app/inq.svg) no-repeat; } 
+#main .mainWarp .button .register i { background:url(../../img/app/reg.svg) no-repeat; } 
 #main .mainWarp .button p { font-size: 30px; font-family: SUITE; font-weight: 700; color: #fff; letter-spacing: -0.5px; } 
 #main .logout { width: 100%; display: flex; flex-direction: column; align-items: center; } 
 #main .logout .bt-logout { display: flex; flex-direction: row; align-items: center; font-family: SUITE; font-size: 18px; letter-spacing: -0.5px; color: #555; font-weight: 600; padding: 10px 40px; border: 1px solid #ddd; border-radius: 5px; background-color: #f5f5f5; } 
-#main .logout i.logout { background: url(../img/logout.svg) no-repeat 50% 50%; width: 60px; height: 60px; } 
+#main .logout i.logout { background: url(../../img/app/logout.svg) no-repeat 50% 50%; width: 60px; height: 60px; } 
 .contain { padding: 16px 10px; background-color: #fff; border: 1px solid #f2f2f2; width: 100%; display: block; margin: 20px auto 0; } 
 .contain:first-child { margin-top: 0; } 
 .contain:last-child { margin-bottom: 20px; } 
@@ -197,8 +197,8 @@ img.col { width:100%; height:auto }
 .contain .table .tbl .sel:focus { border: 1px solid #333; } 
 .contain .table .tbl select option { font-size: 14px; } 
 .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-.contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
-#register .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../img/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
+.contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../../img/app/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
+#register .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
 .contain .table .tbl .textarea { width: 100%; display: flex; } 
 .contain .table .tbl .textarea textarea { width: 100%; height: 100px; padding: 10px; border: 1px solid #ddd; resize: none; } 
@@ -224,7 +224,7 @@ img.col { width:100%; height:auto }
 .list .title-wrap .button .bt { padding: 10px 20px; font-size: 14px; letter-spacing: -0.5px; font-weight: 500; } 
 .list .title-wrap .button .bt-add { background-color: #2B78E4; color: #fff; border-radius: 5px; } 
 .nocontent { display: flex; align-items: center; flex-direction: column; justify-content: center; min-height: 50vh; } 
-.nocontent i { display: block; width: 100px; height: 100px; background: url(../img/nocontent.svg) no-repeat 50% 50%; background-size: 100px; } 
+.nocontent i { display: block; width: 100px; height: 100px; background: url(../../img/app/nocontent.svg) no-repeat 50% 50%; background-size: 100px; } 
 .nocontent span { font-size: 14px; color: #C0C0C0; font-weight: 600; padding: 10px 0; } 
 
 
@@ -315,8 +315,8 @@ table.col tbody td.tar { text-align: right; }
 #confirm .inner .sel { padding: 10px; border: 1px solid #ddd; width: 100%; font-size: 13px; } 
 #confirm .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; } 
 #confirm .inn input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-#confirm .inn input[type="radio"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
-#confirm .inn input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../img/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
+#confirm .inn input[type="radio"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../../img/app/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
+#confirm .inn input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 #confirm .inn input[type="radio"]:disabled+label::before { background-color: #eee; } 
 #confirm .money td { border-left: 1px solid #ddd; } 
 #confirm .money td:first-child { border-left: none; } 
@@ -340,7 +340,7 @@ table.col tbody td.tar { text-align: right; }
 .content { border-radius: 5px; background: #FFF; box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.08), 0px 6px 8px -6px rgba(24, 39, 75, 0.12); position: relative;border: 1px solid #ddd; } 
 .content .cons { width: 100%; padding: 16px; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; } 
 .content .cons .con { min-width: calc(100% - 40px); display: flex; flex-direction: column; align-items: flex-start; gap: 10px; } 
-.content .cons .view { width: 24px; height: 24px; background: url(../img/view.svg)no-repeat 50% 50%; background-size: contain; } 
+.content .cons .view { width: 24px; height: 24px; background: url(../../img/app/view.svg)no-repeat 50% 50%; background-size: contain; } 
 .content .cons .con .text { width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 3px; } 
 .content .cons .con .text .badge { padding: 5px 10px; font-size: 12px; white-space: nowrap; font-weight: 700; letter-spacing: -0.75px; border-radius: 5px; } 
 .content .cons .con .text .badge.rgst { background-color: #FF7171; color: #fff; } 
@@ -378,10 +378,10 @@ table.col tbody td.tar { text-align: right; }
 .paging .page .num { display:block; margin:0 3px; width:20px; line-height:20px; font-size:12px; letter-spacing:-.6px; color:#999; border:1px solid #ccc; background:#fff } 
 .paging .page strong.num { font-weight:900; color:#333; border:1px solid #333 } 
 .paging i { background-size: 10px 10px; } 
-.paging .ico-pprev { background-image:url("../img/ico-pprev.svg") } 
-.paging .ico-prev { background-image:url("../img/ico-prev.svg") } 
-.paging .ico-next { background-image:url("../img/ico-next.svg") } 
-.paging .ico-nnext { background-image:url("../img/ico-nnext.svg") } 
+.paging .ico-pprev { background-image:url("../../img/app/ico-pprev.svg") } 
+.paging .ico-prev { background-image:url("../../img/app/ico-prev.svg") } 
+.paging .ico-next { background-image:url("../../img/app/ico-next.svg") } 
+.paging .ico-nnext { background-image:url("../../img/app/ico-nnext.svg") } 
 
 
 
