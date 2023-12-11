@@ -53,20 +53,20 @@ input:disabled:-ms-input-placeholder { color: #ccc }
 #login .footer .cite strong { font-family: arial, sans-serif; color: #323232 } 
 #login .login { display: flex; align-items: center; justify-content: center; min-height: 100vh } 
 #login .login fieldset { position: relative; padding: 40px 50px 60px 50px; width: 530px; background: #fff; border-radius: 2px; box-shadow: 20px 40px 40px rgb(0 0 0 / 20%) } 
-#login .login h2 { padding: 160px 0 20px 0; line-height: 1; font-size: 20px; letter-spacing: -1.6px; text-align: center; color: #555; font-weight: normal; background: url("../img/apartment.svg") no-repeat 50% 0 / 170px auto } 
+#login .login h2 { padding: 160px 0 20px 0; line-height: 1; font-size: 20px; letter-spacing: -1.6px; text-align: center; color: #555; font-weight: normal; background: url("../../img/admin/apartment.svg") no-repeat 50% 0 / 170px auto } 
 #login .login h2 strong { padding: 0 5px; color: #000 } 
 #login .login dt { display: none; font-size: 12px; font-weight: 700; color: #555555 } 
 #login .login dd { position: relative; margin: 0 0 10px 0 } 
 #login .login dd i { position: absolute; top: 0; left: 0; display: block; width: 56px; height: 56px } 
-#login .login .login-id { background: url("../img/login-id.svg") no-repeat 16px 50% / 24px auto !important } 
-#login .login .login-pw { background: url("../img/login-pw.svg") no-repeat 16px 50% / 24px auto !important } 
+#login .login .login-id { background: url("../../img/admin/login-id.svg") no-repeat 16px 50% / 24px auto !important } 
+#login .login .login-pw { background: url("../../img/admin/login-pw.svg") no-repeat 16px 50% / 24px auto !important } 
 #login .login input[type="text"],
 #login .login input[type="password"] { padding: 0 16px 0 48px; width: 100%; height: 56px; font-size: 16px; letter-spacing: 0px; border: 1px solid #dfdfdf; transition: border .3s } 
 #login .login input:focus[type="text"],
 #login .login input:focus[type="password"] { border: 1px solid #323232 } 
 #login .login input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
-#login .login input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-#login .login input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #2B78E4; background: #2B78E4 url(../img/check2.svg) no-repeat 50% 50%; } 
+#login .login input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+#login .login input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #2B78E4; background: #2B78E4 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
 #login .login input[type="checkbox"]+label span { font-size: 14px; letter-spacing: -0.75px; font-weight: 500; } 
 #login .login button { position: relative; width: 100%; height: 60px; color: #fff; background-color: #2B78E4; border-radius: 0px } 
 #login .login button:hover { background-color: #225DAF; box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 10%) } 
@@ -121,7 +121,7 @@ body.min #contain { padding: 50px 0 0 100px }
 #gnb .gnb .depth2 li a { display: block; line-height: 70px; font-size: 14px; font-weight: 600; letter-spacing: -.6px; color: #999; text-decoration: none } 
 #gnb .gnb .depth2 li:hover a,
 #gnb .gnb .depth2 li.act a { color: #fff; font-weight: 700 } 
-#gnb .gnb-btn { display: block; position: absolute; top: 0px; left:300px; width: 20px; height: 70px; border: 1px solid #d6d7dc; background: #f9fafe url("../img/gnb-btn.svg") no-repeat 50% 50%; cursor: pointer; } 
+#gnb .gnb-btn { display: block; position: absolute; top: 0px; left:300px; width: 20px; height: 70px; border: 1px solid #d6d7dc; background: #f9fafe url("../../img/admin/gnb-btn.svg") no-repeat 50% 50%; cursor: pointer; } 
 
 
 /* main */
@@ -152,8 +152,8 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .buttons { display: flex; align-items: center; justify-content: flex-end; gap: 10px; padding-bottom: 20px } 
 #contain .buttons strong { display: inline-block; line-height: 52px; vertical-align: middle } 
 #contain .buttons .check input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-#contain .buttons .check input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; } 
-#contain .buttons .check input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #FF7171; background: #FF7171 url(../img/check2.svg) no-repeat 50% 50%; } 
+#contain .buttons .check input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; } 
+#contain .buttons .check input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #FF7171; background: #FF7171 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
 #contain .buttons .check span { font-size: 14px; font-weight: 500; font-size: 14px; color: #727272; } 
 #contain .button .bt { display: inline-block; padding: 0 24px; height: 40px; line-height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px } 
 #contain .button .bt:hover { box-shadow: 8px 8px 20px 0 rgb(0 0 0 / 10%) } 
@@ -206,10 +206,11 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .contain .tbl td .fileimg { display: flex; align-items: flex-start; flex-direction: column; gap: 10px; } 
 #contain .contain .tbl td .fileimg .additem { width:150px; } 
 #contain .contain .tbl td .fileimg .additem input[type="file"] { display: none; } 
-#contain .contain .tbl td .fileimg .additem input[type="file"] + label { display: block; height: 150px; padding-bottom: 100%; border: 1px solid #e1e1e5; background: #f8f8f8 url(../img/ico-camera.png) no-repeat 50% 50%; cursor: pointer; } 
+#contain .contain .tbl td .fileimg .additem input[type="file"] + label { display: block; height: 150px; padding-bottom: 100%; border: 1px solid #e1e1e5; background: #f8f8f8 url(../../img/admin/ico-camera.png) no-repeat 50% 50%; cursor: pointer; } 
 #contain .contain .tbl td .fileimg .item { position: relative; width: 900px; } 
-#contain .contain .tbl td .fileimg .item .image { padding-bottom: 100%; border: 0px solid #e1e1e5; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; } 
-#contain .contain .tbl td .fileimg .item .btn_del { position: absolute; z-index: 10; top: 0; right: 0; width: 40px; height: 40px; background: url(../img/ico-del.png) no-repeat 50% 50%; background-size: contain; } 
+#contain .contain .tbl td .fileimg .item .image { border: 0px solid #e1e1e5; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; } 
+#contain .contain .tbl td .fileimg .item .image img{width: 100%;object-fit: cover;}
+#contain .contain .tbl td .fileimg .item .btn_del { position: absolute; z-index: 10; top: 0; right: 0; width: 40px; height: 40px; background: url(../../img/admin/ico-del.png) no-repeat 50% 50%; background-size: contain; } 
 #contain .contain table.col { width: 100%; border-collapse: collapse; border-spacing: 0; } 
 #contain .contain table.fixed { table-layout: fixed; } 
 #contain .contain table.elp td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
@@ -258,8 +259,8 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl .form .input .ip-dat:valid { color: #333; } 
 #contain .contain .table .tbl .ipt { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
 #contain .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-#contain .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-#contain .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+#contain .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+#contain .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
 #contain .contain .table .tbl .bt { height: 40px; font-size: 14px; font-weight: 600; box-shadow: 0 0 2px 0 rgb(0 0 0 / 2%); transition: all .2s; border-radius: 5px; } 
 #contain .contain .table .tbl .bt-check { width: 200px; background-color: #2B78E4; color: #fff; } 
 #contain .contain .table .tbl td .inner { display: flex; align-items: center; } 
@@ -268,8 +269,8 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl select option { font-size: 14px; } 
 #contain .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 30px; flex-wrap: wrap; } 
 #contain .contain .table .tbl input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
-#contain .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../img/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
-#contain .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../img/check2.svg) no-repeat 50% 50%; } 
+#contain .contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
+#contain .contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
 #contain .contain .table .tbl .ipt span { font-size: 14px; font-weight: 600; font-size: 14px; } 
 #contain .contain .table .tbl .textarea { width: 100%; display: flex; } 
 #contain .contain .table .tbl .textarea textarea { border: 1px solid #ddd; width: 100%; height: 100px; padding: 10px; resize: none; } 
@@ -291,15 +292,15 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 .paging .page .pag,
 .paging .page .num { display:block; margin:0 4px; width:30px; line-height:28px; font-size:12px; letter-spacing:-.6px; color:#999; border:1px solid #ccc; background:#fff } 
 .paging .page .current { font-weight:900; color:#333; border:1px solid #333 } 
-.paging .ico-pprev { background-image:url("../img/ico-pprev.svg") } 
-.paging .ico-prev { background-image:url("../img/ico-prev.svg") } 
-.paging .ico-next { background-image:url("../img/ico-next.svg") } 
-.paging .ico-nnext { background-image:url("../img/ico-nnext.svg") } 
+.paging .ico-pprev { background-image:url("../../img/admin/ico-pprev.svg") } 
+.paging .ico-prev { background-image:url("../../img/admin/ico-prev.svg") } 
+.paging .ico-next { background-image:url("../../img/admin/ico-next.svg") } 
+.paging .ico-nnext { background-image:url("../../img/admin/ico-nnext.svg") } 
 
 
 /* nocontent */
 .nocontent { display:flex; align-items:center; flex-direction:column; justify-content:center; min-height:50vh } 
-.nocontent i { display:block; width:180px; height:180px; background: url("../img/nocontent.svg") no-repeat 50% 50%; background-size:180px; } 
+.nocontent i { display:block; width:180px; height:180px; background: url("../../img/admin/nocontent.svg") no-repeat 50% 50%; background-size:180px; } 
 .nocontent span { padding:20px 0; font-size:16px; letter-spacing:-.75px; color:#C0C0C0; font-weight: 500; } 
 
 
