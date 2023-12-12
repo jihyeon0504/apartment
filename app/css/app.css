@@ -201,7 +201,7 @@ img.col { width:100%; height:auto }
 <<<<<<< HEAD
 .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 =======
-#register .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
+.contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 >>>>>>> 581052c4e69756e9a1b2ea17fc684efae9dbd71e
 .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
 .contain .table .tbl .textarea { width: 100%; display: flex; } 
