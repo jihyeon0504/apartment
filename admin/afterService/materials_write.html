@@ -19,7 +19,7 @@
             <h1><a href="../sales/index.html"><strong>아파트장비 </strong>판매관리시스템</a></h1>
             <div class="lnb">
                 <span class="hello">
-                    <div class="ico"><a href="#"><img src="../img/apartment.svg" alt=""></a></div>
+                    <div class="ico"><a href="#"><img src="../../img/admin/apartment.svg" alt=""></a></div>
                     <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
                 </span>
                 <span class="memb">
@@ -160,11 +160,21 @@
                             </tr>
                             <tr>
                                 <th class="tal"><strong class="bullet">부품규격</strong></th>
-                                <td colspan="3">
+                                <td>
                                     <div class="form">
                                         <div class="ipt w100p">
                                             <input type="text" class="ip-txt w100p" placeholder="적용부품규격을 입력해주세요.">
                                         </div>
+                                    </div>
+                                </td>
+                                <th class="tal"><strong class="bullet">사용여부</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="사용여부" class="sel">
+                                            <option>선택</option>
+                                            <option>사용</option>
+                                            <option>미사용</option>
+                                        </select>
                                     </div>
                                 </td>
                             </tr>
@@ -191,8 +201,9 @@
                                 <td colspan="3">
                                     <div class="fileimg">
                                         <div class="additem">
-                                            <input type="file" id="upfile1">
-                                            <label for="upfile1"></label>
+                                            <input type="file" id="upfile">
+                                            <label for="upfile"></label>
+                                            <span>파일명 : </span><p id="originName" style="display : inline-block"></p>
                                         </div>
                                         <div class="item">
                                             <div class="image">
@@ -210,7 +221,6 @@
             </div>
         </section>
     </main>
-
     <!-- footer -->
     <footer id="footer">
         <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
@@ -222,6 +232,18 @@
         $(".dp1:nth-child(2) .depth2").show();
         $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
     });
+
+    window.onload=function(){
+	target=document.getElementById('upfile'); 
+	target.addEventListener('change',function(){ 
+		if(target.value.length){ 
+			$('#originName').html(target.files[0].name);
+		}else{ 
+			$('#originName').html("");
+		}
+	});
+}
+
 </script>
 <!-- 저장 확인 모달 -->
 <section class="modal-boxed" id="save1">

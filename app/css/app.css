@@ -198,7 +198,7 @@ img.col { width:100%; height:auto }
 .contain .table .tbl select option { font-size: 14px; } 
 .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
 .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../../img/app/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
-#register .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
+.contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 .contain .table .tbl .inn { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
 .contain .table .tbl .textarea { width: 100%; display: flex; } 
 .contain .table .tbl .textarea textarea { width: 100%; height: 100px; padding: 10px; border: 1px solid #ddd; resize: none; } 
@@ -212,9 +212,13 @@ img.col { width:100%; height:auto }
 .contain .sum { width: 100%; display: flex; flex-direction: row; justify-content: space-between; } 
 .contain .button { width: 100%; display: flex; } 
 .contain .button .bt { width: 100%; padding: 16px; font-size: 15px; font-weight: 600; letter-spacing: -0.75px; border-radius: 5px; } 
+.contain .button .bt-del { background-color:#333; color: #fff; } 
 .contain .button .bt-search { background-color:#525460; color: #fff; } 
 .contain .button .bt-slct { background-color: #FF7171; color: #fff; } 
 
+.contain .table .tbl input[type="checkbox"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
+.contain .table .tbl input[type="checkbox"]+label::before { content: ''; display: block; width: 14px; height: 14px; border: 1px solid #ddd; background: url(../../img/app/check1.svg) no-repeat 50% 50%; background-size: 100% auto; border-radius: 50%; } 
+.contain .table .tbl input[type="checkbox"]:checked+label::before { content: ''; border: 1px solid #225DAF; background: url(../../img/app/check2.svg) no-repeat 50% 50% #225DAF; background-size: 100% auto; } 
 
 .list-wrap { width:100%; display: flex; flex-direction: column; gap: 10px; min-height: 50vh; border-top: 1px solid #ddd; margin-top: 20px; padding: 20px 0; } 
 .list { width: 100%; } 
@@ -359,6 +363,9 @@ table.col tbody td.tar { text-align: right; }
 .btns .btn { width: 100%; padding: 20px 0; font-size: 14px; font-family: pretendard; letter-spacing: -0.75px; font-weight: 700; border-radius: 5px; } 
 .btns .btn.btn-del { background-color:#555; color: #fff; } 
 .btns .btn.btn-save { background-color: #2B78E4; color: #fff; } 
+.btns .btn.bt-del { background-color:#333; color: #fff; } 
+.btns .btn.bt-search { background-color:#525460; color: #fff; } 
+.btns .btn.bt-slct { background-color: #FF7171; color: #fff; } 
 
 /* 서명 */
 #sign { background-color: #f9f9f9; width: 100%; position: relative; padding: 10px 10px 60px; height: calc(100vh - 100px); } 
