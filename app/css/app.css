@@ -129,7 +129,7 @@ img.col { width:100%; height:auto }
 /* header */
 #header { position: sticky; z-index: 99; top: 0; background-color: #fff; transition: all 0.3s; } 
 #header .title { display: flex; align-items: center; justify-content: center; position: relative; height: 4rem; box-shadow: 0 0.2rem 0.5rem #00000010; } 
-#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 4rem; height: 4rem; background: url(../../img/app/before.svg) no-repeat 50% 50%; } 
+#header .title .prev { position: absolute; top: 0; left: 0; display: block; width: 4rem; height: 4rem; background: url(../../img/app/ico-home.svg) no-repeat 50% 50%; } 
 #header .title .tit { font-size: 20px; letter-spacing: -0.5px; } 
 #header .title .logout { position: absolute; top: 0; right: 0; display: block; width: 4rem; height: 4rem; background: url(../../img/app/logout.svg) no-repeat 50% 50%; } 
 
@@ -364,9 +364,11 @@ table.col tbody td.tar { text-align: right; }
 .btns .btn { width: 100%; padding: 20px 0; font-size: 14px; font-family: pretendard; letter-spacing: -0.75px; font-weight: 700; border-radius: 5px; } 
 .btns .btn.btn-del { background-color:#555; color: #fff; } 
 .btns .btn.btn-save { background-color: #2B78E4; color: #fff; } 
+.btns .btn.btn-list { background-color: #ffffff; color: #555; border: 1px solid #ddd;} 
 .btns .btn.bt-del { background-color:#333; color: #fff; } 
 .btns .btn.bt-search { background-color:#525460; color: #fff; } 
-.btns .btn.bt-slct { background-color: #FF7171; color: #fff; } 
+.btns .btn.bt-slct { background-color: #FF7171; color: #fff; }
+.btns .btn.bt-list { background-color: #ffffff; color: #555; border: 1px solid #ddd;} 
 
 /* 서명 */
 #sign { background-color: #f9f9f9; width: 100%; position: relative; padding: 10px 10px 60px; height: calc(100vh - 100px); } 
@@ -399,6 +401,7 @@ table.col tbody td.tar { text-align: right; }
 #footer .footer .buttons .bt { width: 100%; padding: 20px 0; font-size: 14px; font-family: pretendard; letter-spacing: -0.75px; font-weight: 700; } 
 #footer .footer .buttons .bt.bt-del { background-color:#555; color: #fff; } 
 #footer .footer .buttons .bt.bt-save { background-color: #2B78E4; color: #fff; } 
+#footer .footer .buttons .bt.bt-list { background-color: #fff; color: #555; } 
 #footer .footer .buttons .bt.bt-slct { background-color: #FF7171; color: #fff; } 
 /* 모달 */
 .modal-boxed { position: fixed; z-index: -1; top: 0; bottom: 0; right: 0; left: 0; display: flex; justify-content: center; align-items: center; background: rgb(0 7 18 / 30%); opacity: 0; visibility: hidden; transition: all 0.2s } 

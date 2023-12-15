@@ -50,8 +50,8 @@
                             <li><a href="../afterService/materials.html">자재관리</a></li>
                         </ul>
                     </div>
-                    <div class="dp1"> <a href="../sistem/user.html" class="da1"><i><img src="../../img/admin/dash-ico03.svg"
-                                    alt="시스템관리"></i>
+                    <div class="dp1"> <a href="../sistem/user.html" class="da1"><i><img
+                                    src="../../img/admin/dash-ico03.svg" alt="시스템관리"></i>
                             <span>시스템관리</span>
                         </a>
                         <ul class="depth2">
@@ -59,8 +59,8 @@
                             <li><a href="../sistem/index.html">코드관리</a></li>
                         </ul>
                     </div>
-                    <div class="dp1"> <a href="../apartment/index.html" class="da1"><i><img src="../../img/admin/dash-ico04.svg"
-                                    alt="아파트관리"></i>
+                    <div class="dp1"> <a href="../apartment/index.html" class="da1"><i><img
+                                    src="../../img/admin/dash-ico04.svg" alt="아파트관리"></i>
                             <span>아파트관리</span>
                         </a>
                         <ul class="depth2">
@@ -200,14 +200,19 @@
                                 <th class="tal"><strong class="bullet">부품이미지</strong></th>
                                 <td colspan="3">
                                     <div class="fileimg">
-                                        <div class="additem">
-                                            <input type="file" id="upfile">
-                                            <label for="upfile"></label>
-                                            <span>파일명 : </span><p id="originName" style="display : inline-block"></p>
+                                        <div class="add">
+                                            <div class="additem">
+                                                <input type="file" id="upfile">
+                                                <label for="upfile"></label>
+                                            </div>
+                                            <div class="fileName">
+                                                <span>파일명 : </span>
+                                                <p id="originName" style="display : inline-block"></p>
+                                            </div>
                                         </div>
                                         <div class="item">
                                             <div class="image">
-                                            <img src="../../img/admin/part.jpg" alt="">
+                                                <img src="../../img/admin/part.jpg" alt="">
                                             </div>
                                             <button type="button" class="btn_del" onclick="openModal('del')"><span
                                                     class="skip">삭제</span></button>
@@ -233,16 +238,16 @@
         $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
     });
 
-    window.onload=function(){
-	target=document.getElementById('upfile'); 
-	target.addEventListener('change',function(){ 
-		if(target.value.length){ 
-			$('#originName').html(target.files[0].name);
-		}else{ 
-			$('#originName').html("");
-		}
-	});
-}
+    window.onload = function () {
+        target = document.getElementById('upfile');
+        target.addEventListener('change', function () {
+            if (target.value.length) {
+                $('#originName').html(target.files[0].name);
+            } else {
+                $('#originName').html("");
+            }
+        });
+    }
 
 </script>
 <!-- 저장 확인 모달 -->

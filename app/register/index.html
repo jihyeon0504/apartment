@@ -248,7 +248,7 @@
                                     </colgroup>
                                     <thead>
                                         <th>번호</th>
-                                        <th>부품코드</th>
+                                        <th>항목(부품코드)</th>
                                         <th>수량</th>
                                         <th colspan="2">금액</th>
                                     </thead>
@@ -339,7 +339,7 @@
                                     </div>
                                     <div class="sign">
                                         <button class="bt-sign" onclick="location.href='./sign.html'">(서명) </button>
-                                        <img src="" alt="sign" onerror="this.src='../../img/app/noSign.png'">
+                                        <img id="signImg" src="../../img/app/noSign.png" alt="sign">
                                     </div>
                                 </div>
                             </div>
@@ -354,6 +354,7 @@
                 <div class="footer">
                     <div class="buttons">
                         <button class="bt bt-del">삭제</button>
+                        <button class="bt bt-list">목록</button>
                         <button class="bt bt-save">저장</button>
                     </div>
                 </div>
