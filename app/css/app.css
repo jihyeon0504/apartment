@@ -176,6 +176,7 @@ img.col { width:100%; height:auto }
 .contain .tit { display: flex; flex-direction: row; justify-content: space-between; align-items: center; } 
 .contain .tit h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.75px; } 
 .contain .tit .bt-add { padding: 10px 20px; background-color: #555; color: #fff; font-size: 14px; font-weight: 500; letter-spacing: -0.75px; } 
+.contain .tit .bt-save{ padding: 10px 20px; background-color: #2B78E4; color: #fff; font-size: 14px; font-weight: 500; letter-spacing: -0.75px; }
 .contain .table { width: 100%; padding: 20px 0; } 
 .contain .table .tbl { width: 100%; } 
 .contain .table .tbl table { width: 100%; border-collapse: collapse; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 

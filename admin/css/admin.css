@@ -170,6 +170,11 @@ body.min #contain { padding: 50px 0 0 100px }
 #contain .button .bt-upload { background-color:#FF7171; border:1px solid #FF7171; color:#fff; } 
 #contain .button .bt-upload:hover { background-color: #DB5A5A; border: 1px solid #DB5A5A; } 
 #contain .button .bt-list { background-color: #000; color: #fff; } 
+#contain .button .bt-keep{background-color: #2B78E4; color: #fff;}
+#contain .button .bt-keep:hover{background-color: #0D5BC9; color: #fff;}
+#contain .button .bt-new{background-color: #FF7171; color: #fff;}
+#contain .button .bt-new:hover{background-color: #DB5A5A; color: #fff;}
+
 
 
 /* 테이블 */
@@ -263,6 +268,7 @@ table.col .bt-ins { background-color: #636363; color: #fff; font-weight: 600; }
 #contain .contain .table .tbl .form .input .ip-dat { padding: 10px; width: 100%; font-size: 14px; border: 1px solid #ddd; border-radius: 2px; } 
 #contain .contain .table .tbl .form .input .ip-dat:valid { color: #333; } 
 #contain .contain .table .tbl .ipt { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#contain .contain .table .tbl .ipt .ip-dat{width: 100%;padding: 8px;border: 1px solid #ddd;}
 #contain .contain .table .tbl input[type="radio"]+label { display: flex; flex-direction: row; align-items: center; gap: 5px; cursor: pointer; } 
 #contain .contain .table .tbl input[type="radio"]+label::before { content: ''; display: block; width: 16px; height: 16px; border: 1px solid #ddd; background: url(../../img/admin/check1.svg) no-repeat 50% 50%; background-size: 100% auto !important; border-radius: 50%; } 
 #contain .contain .table .tbl input[type="radio"]:checked+label::before { content: ''; border: 1px solid #474C81; background: #474C81 url(../../img/admin/check2.svg) no-repeat 50% 50%; } 
